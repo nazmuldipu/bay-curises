@@ -1,0 +1,4 @@
+<h1 class="{% for class in params.classes %} {{ class }} {% endfor %}"
+        {% if params.id %} id="{{ params.id }}" {% endif %} >
+    {{ params.copy | safe }}
+</h1>

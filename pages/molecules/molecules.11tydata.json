@@ -1,0 +1,35 @@
+{
+    "title": "Molecules",
+    "typography": {
+        "h1": {
+            "classes": ["h1", "heading"],
+            "id": "h1_head",
+            "copy": "h1. heading"
+        },
+        "h2": {
+            "classes": ["h2", "heading"],
+            "id": "h2_head",
+            "copy": "h2. heading"
+        },
+        "h3": {
+            "classes": ["h3", "heading"],
+            "id": "h3_head",
+            "copy": "h3. heading"
+        },
+        "h4": {
+            "classes": ["h4", "heading"],
+            "id": "h4_head",
+            "copy": "h4. heading"
+        },
+        "h5": {
+            "classes": ["h5", "heading"],
+            "id": "h5_head",
+            "copy": "h5. heading"
+        },
+        "h6": {
+            "classes": ["h6", "heading"],
+            "id": "h6_head",
+            "copy": "h6. heading"
+        }
+    }
+}

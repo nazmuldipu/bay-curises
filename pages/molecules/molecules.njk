@@ -1,0 +1,22 @@
+---
+layout: base.njk
+pagename: molecules
+meta_title: "Bay Cruise ship "
+permalink: "docs/molecules.html"
+permalinkBypassOutputDir: true
+nickname: "molecules"
+---
+{%- from "components/components.njk" import component -%}
+{{title}}
+<hr/>
+<h2>Typography</h2>
+{{component('headings/h1', typography.h1)}}
+{{component('headings/h2', typography.h2)}}
+{{component('headings/h3', typography.h3)}}
+{{component('headings/h4', typography.h4)}}
+{{component('headings/h5', typography.h5)}}
+{{component('headings/h6', typography.h6)}}
+
+<hr/>
+<h2>Nav</h2>
+{{component('navs/nav1', typography.h4)}}
