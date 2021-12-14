@@ -1,1 +1,3 @@
-<nav>Navigation Here</nav>
+{%- from "components/components.njk" import component -%}
+
+{{component('navs/nav1', data.navbar)}}

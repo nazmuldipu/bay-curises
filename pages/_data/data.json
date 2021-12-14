@@ -7,27 +7,10 @@
   ],
   "navbar": [
     { "label": "Home", "link": "index.html" },
-    { "label": "About us", "link": "about_us.html" },
-    { "label": "Packages", "link": "packages.html" },
-    {
-      "label": "Media",
-      "dropdown": true,
-      "menus": [
-        { "label": "Ftp Server", "link": "ftp-server.html", "icon": "ftp.svg" },
-        {
-          "label": "Torrent server",
-          "link": "torrent-server.html",
-          "icon": "utorrent.svg"
-        },
-        {
-          "label": "Tv server",
-          "link": "tv-server.html",
-          "icon": "tv-screen.svg"
-        }
-      ]
-    },
-    { "label": "Our Services", "link": "our_services.html" },
-    { "label": "Contact us", "link": "contact_us.html" }
+    { "label": "About", "link": "about_us.html" },
+    { "label": "Schedule", "link": "schedule.html" },
+    { "label": "Services", "link": "our_services.html" },
+    { "label": "Contact", "link": "contact_us.html" }
   ],
   "index": {},
   "about": {

@@ -69,6 +69,27 @@ meta_description: Some description here
 <body class="preload page-{{pagename}}">
     {% include "_page-header.njk" %}
     {{content | safe}}
+    <script>
+        document.body.classList.remove("preload");
+        // start navbar dropdown
+        const flyout_btn = document.querySelectorAll('.flyout-btn ');
+        flyout_btn.forEach(el => {
+            const parent = el.parentElement.querySelector('.flyout');
+            parent.classList.add('hidden');
+            el.addEventListener('click', function () {
+                parent.classList.toggle('hidden');
+            })
+        })
+        const burger_menu = document.querySelectorAll('.burger-menu');
+        const flyby_mobile = document.querySelector('.flyby-mobile');
+        flyby_mobile.classList.toggle('hidden');
+        burger_menu.forEach(bm => {
+            bm.addEventListener('click', function () {
+                flyby_mobile.classList.toggle('hidden');
+            })
+        })
+        // end navbar dropdown
+    </script>
 </body>
 
 </html>

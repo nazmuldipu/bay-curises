@@ -11,18 +11,110 @@
 <!-- start critical css -->
 <!-- end critical css -->
 <!-- start sync css -->
-<link rel="stylesheet" type="text/css" href="molecules/molecules-sync.css">
+<link rel="stylesheet" type="text/css" href="molecules\molecules-sync.css">
 <!-- end sync css -->
 <!-- start font preloads -->
 <link rel="preload" href="fonts/SpaceMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <!-- end font preloads -->
 <!-- start scripts -->
-<script src="molecules/molecules-defer.js" defer="defer"></script>
-<script src="molecules/molecules-module.js" type="module"></script>
+<script src="molecules\molecules-defer.js" defer="defer"></script>
+<script src="molecules\molecules-module.js" type="module"></script>
 <!-- end scripts -->
 </head>
 <body class="preload page-molecules">
-<nav>Navigation Here</nav>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
+<div class="flex justify-between items-center py-2 md:justify-start md:space-x-10">
+<div class="flex justify-start lg:w-0 lg:flex-1">
+<a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
+<img src="images/logo.png" height="40" width="40" alt="Logo" class="h-10">
+<span class="font-semibold text-xl font-serif">Bay Cruise</span>
+</a>
+</div>
+<div class="-mr-2 -my-2 md:hidden">
+<button type="button" class="burger-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+<span class="sr-only">Open menu</span>
+<!-- Heroicon name: outline/menu -->
+<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+</svg>
+</button>
+</div>
+<nav class="hidden md:flex space-x-4">
+<a href="index.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+Home
+</a>
+<a href="about_us.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+About
+</a>
+<a href="schedule.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+Schedule
+</a>
+<a href="our_services.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+Services
+</a>
+<a href="contact_us.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+Contact
+</a>
+</nav>
+<div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+<a href="tel:+8801826191509" class="transition duration-500 ease-in-out hover:bg-red-600 px-2 py-1 text-base text-white bg-gray-800 hover:text-gray-200 no-underline rounded-full">
+01826-191509
+</a>
+</div>
+</div>
+<div class="flyby-mobile absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+<div class="pt-5 pb-6 px-5">
+<div class="flex items-center justify-between">
+<a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
+<img src="images/logo.png" height="40" width="40" alt="Logo" class="h-10">
+<span class="font-semibold text-xl font-serif">Bay Cruise</span>
+</a>
+<div class="-mr-2">
+<button type="button" class="burger-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+<span class="sr-only">Close menu</span>
+<!-- Heroicon name: outline/x -->
+<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+</svg>
+</button>
+</div>
+</div>
+<div class="mt-6">
+<nav class="grid gap-y-1">
+<a href="index.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+Home
+</a>
+<a href="about_us.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+About
+</a>
+<a href="schedule.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+Schedule
+</a>
+<a href="our_services.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+Services
+</a>
+<a href="contact_us.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+Contact
+</a>
+</nav>
+</div>
+</div>
+<div class="py-6 px-5 space-y-6">
+<div class="grid grid-cols-2 gap-y-4 gap-x-2">
+</div>
+<div>
+<p class="mt-6 text-center text-base font-medium text-gray-500">
+Welcome to
+<a href="/" class="text-blue-600 hover:text-blue-500">
+Bay Coruiser
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 Molecules
 <hr>
 <h2>Typography</h2>
@@ -46,8 +138,121 @@ h6. heading
 </h6>
 <hr>
 <h2>Nav</h2>
-<nav class="bg-gray-600">
-h4. heading
+<div class="bg-blue-100 py-2">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
+<div class="flex justify-between items-center py-2 md:justify-start md:space-x-10">
+<div class="flex justify-start lg:w-0 lg:flex-1">
+<a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
+<img src="images/logo.png" height="40" width="40" alt="Logo" class="h-10">
+<span class="font-semibold text-xl font-serif">Bay Cruise</span>
+</a>
+</div>
+<div class="-mr-2 -my-2 md:hidden">
+<button type="button" class="burger-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+<span class="sr-only">Open menu</span>
+<!-- Heroicon name: outline/menu -->
+<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+</svg>
+</button>
+</div>
+<nav class="hidden md:flex space-x-4">
+<a href="index.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+Home
+</a>
+<a href="about_us.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+About
+</a>
+<a href="schedule.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+Schedule
+</a>
+<a href="our_services.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+Services
+</a>
+<a href="contact_us.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins">
+Contact
+</a>
 </nav>
+<div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+<a href="tel:+8801826191509" class="transition duration-500 ease-in-out hover:bg-red-600 px-2 py-1 text-base text-white bg-gray-800 hover:text-gray-200 no-underline rounded-full">
+01826-191509
+</a>
+</div>
+</div>
+<div class="flyby-mobile absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+<div class="pt-5 pb-6 px-5">
+<div class="flex items-center justify-between">
+<a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
+<img src="images/logo.png" height="40" width="40" alt="Logo" class="h-10">
+<span class="font-semibold text-xl font-serif">Bay Cruise</span>
+</a>
+<div class="-mr-2">
+<button type="button" class="burger-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+<span class="sr-only">Close menu</span>
+<!-- Heroicon name: outline/x -->
+<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+</svg>
+</button>
+</div>
+</div>
+<div class="mt-6">
+<nav class="grid gap-y-1">
+<a href="index.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+Home
+</a>
+<a href="about_us.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+About
+</a>
+<a href="schedule.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+Schedule
+</a>
+<a href="our_services.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+Services
+</a>
+<a href="contact_us.html" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+Contact
+</a>
+</nav>
+</div>
+</div>
+<div class="py-6 px-5 space-y-6">
+<div class="grid grid-cols-2 gap-y-4 gap-x-2">
+</div>
+<div>
+<p class="mt-6 text-center text-base font-medium text-gray-500">
+Welcome to
+<a href="/" class="text-blue-600 hover:text-blue-500">
+Bay Coruiser
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.body.classList.remove("preload");
+        // start navbar dropdown
+        const flyout_btn = document.querySelectorAll('.flyout-btn ');
+        flyout_btn.forEach(el => {
+            const parent = el.parentElement.querySelector('.flyout');
+            parent.classList.add('hidden');
+            el.addEventListener('click', function () {
+                parent.classList.toggle('hidden');
+            })
+        })
+        const burger_menu = document.querySelectorAll('.burger-menu');
+        const flyby_mobile = document.querySelector('.flyby-mobile');
+        flyby_mobile.classList.toggle('hidden');
+        burger_menu.forEach(bm => {
+            bm.addEventListener('click', function () {
+                flyby_mobile.classList.toggle('hidden');
+            })
+        })
+        // end navbar dropdown
+</script>
 </body>
 </html>
