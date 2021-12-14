@@ -6,6 +6,12 @@ permalink: "docs/index.html"
 permalinkBypassOutputDir: true
 nickname: "You Thing"
 ---
-
+{% from "components/media-carousel.njk" import media_carousel %}
 
 Page content goes here
+
+<div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
+    <article class="w-full max-w-screen-lg overflow-hidden">
+        {{ media_carousel(slides) }}
+    </article>
+</div>

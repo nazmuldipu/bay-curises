@@ -20,7 +20,17 @@ module.exports = function (eleventyConfig) {
         const sizes = getImgSizes(name);
         return getSrcSet(name, sizes, imgObj.intrinsicwidth, imgext);
     });
+    eleventyConfig.addNunjucksFilter('getImgSourceType', function(type='jpeg') {
+        switch(type) {
+            case 'jpg':
+                return 'jpeg';
+            default:
+                return type;
+        }
+    });
 
+    eleventyConfig.addPassthroughCopy({ 'components/lib': 'lib' })
+    
     eleventyConfig.addPassthroughCopy('videos');
 
     eleventyConfig.addPassthroughCopy({ 'images/output': 'images' });

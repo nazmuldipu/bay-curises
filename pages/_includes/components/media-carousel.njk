@@ -1,0 +1,71 @@
+{% macro media_carousel(slides, background_color, caption, splitNav = false) %}
+    <figure class="{{ background_color if background_color }}">
+    <media-carousel>
+        <div class="swiper-container w-full h-full" style="overflow: visible !important;">
+            {% if splitNav %}
+                <nav class="car-nav flex flex-row justify-between relative z-20 m-auto -mt-10 top-52">
+                    <div class="pt-3 pb-1 pl-5 pr-3 bg-ams-white shadow-md">
+                        <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                            previous
+                        </button>
+                    </div>
+                    <div class="pt-3 pb-1 pl-3 pr-5 bg-ams-white shadow-md">
+                        <button class="carousel-button-next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                            next
+                        </button>
+                    </div>
+                </nav>
+            {% endif %}
+            <div class="swiper-wrapper z-10">
+                    {% for slide in slides %}
+                        <div class="swiper-slide">
+                            <picture>
+                            {% for direction in slide.artDirection %}
+                                <source 
+                                    data-src="{{ direction.src }}.webp"
+                                    data-srcset="{{ direction | imgObjSrcSet('webp') }}"
+                                    media="{{ direction.media }}"
+                                    sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                    type="image/webp">
+                                <source 
+                                    data-src="{{ direction.src }}.{{ direction.type if direction.type else 'jpg' }}"
+                                    data-srcset="{{ direction | imgObjSrcSet }}" 
+                                    media="{{ direction.media }}"
+                                    sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                    type="image/{{ direction.type | getImgSourceType }}">
+                            {% endfor %}
+                            {% set default = slide.artDirection|first %}
+                                <img 
+                                    data-srcset="{{ default | imgObjSrcSet }}"
+                                    data-src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
+                                    class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
+                                    sizes="{{ default.sizes if default.sizes else '75vw' }}" 
+                                    alt="{{ default.imgalt }}">
+                                <div class="swiper-lazy-preloader"></div>
+                            </picture>
+                        </div>
+                    {% endfor %}
+            </div>
+            {% if not splitNav %}
+                <nav class="flex flex-row items-center relative z-20 m-auto w-max -top-4 py-2 px-4 bg-ams-white shadow-md">
+                    <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                        previous
+                    </button>
+                    <span class="px-4 whitespace-nowrap text-ams-gold">
+                        <span class="carousel-pagination"></span>
+                    </span>
+                    <button class="carousel-button-next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                        next
+                    </button>
+                </nav>
+            {% endif %}
+            {% if caption %}
+            <figcaption class="max-w-xl pt-6 pb-4 px-4 m-auto text-center text-ams-primary">
+                {{ caption }}
+            </figcaption>
+            {% endif %}
+        </div>
+    </media-carousel>
+    </figure>
+    
+{% endmacro %}

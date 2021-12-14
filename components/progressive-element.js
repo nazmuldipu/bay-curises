@@ -3,22 +3,26 @@
 export default class ProgressiveElement extends HTMLElement {
     static loadCSS(cssPath) {
         return new Promise((resolve, reject) => {
-            const link = document.createElement('link');
-            link.type = 'text/css';
-            link.rel = 'stylesheet';
-            link.onload = function() { 
-                resolve(link);
-                console.log('style has loaded'); 
-            };
-            link.href = cssPath;
-        
-            const headTag = document.getElementsByTagName('head')[0];
-            headTag.insertAdjacentElement('beforeend', link);
+            // first, see if the link already exists on the document
+            const alreadyLoaded = [...document.styleSheets].find(style => style.href === cssPath);
+            if(alreadyLoaded) {
+                resolve(alreadyLoaded);
+            } else {
+                const link = document.createElement('link');
+                link.type = 'text/css';
+                link.rel = 'stylesheet';
+                link.onload = function() { 
+                    resolve(link);
+                };
+                link.href = cssPath;
+            
+                const headTag = document.getElementsByTagName('head')[0];
+                headTag.insertAdjacentElement('beforeend', link);
+            }
           }); 
     } 
 
     constructor(modules) {
-        console.log('progressive le constructor', performance.now())
         super();
         // load each module.path on module.trigger (some sort of Listener interface)
         this._moduleMap = new Map();
@@ -39,24 +43,27 @@ export default class ProgressiveElement extends HTMLElement {
     }
 
     /**
-     * TODO -- with subclasses, will want to extend (super.onLoad -- to get module reference) and override this
-     * TODO -- will also want to handle dynamic style loading as well
-     * @param {} moduleId 
+     * with subclasses, will want to extend (super.onLoad -- to get module reference) and override this
+     * @param {String} moduleId 
      */
     async _onLoad(moduleId) {
-        const mod = this._moduleMap.get(moduleId)
+        let mod = this._moduleMap.get(moduleId)
         if(mod) {
             mod.observer.destroy();
             const results = [];
-            if (mod.stylePath) {
-                const cssres = await ProgressiveElement.loadCSS(mod.stylePath);
-                results.push(cssres);
+            if (mod.stylePaths) {
+                const cssResults = await Promise.all(
+                    mod.stylePaths.map(stylePath => ProgressiveElement.loadCSS(stylePath))
+                );
+                Array.prototype.push.apply(results, cssResults);
             }
             if (mod.behaviorPath) {
                 const jsRes = await import(mod.behaviorPath)
                 results.push(jsRes);
+                mod.mod = jsRes;
             }
-            return results
+            mod.results = results;
+            return mod
         }
         return this
     }
