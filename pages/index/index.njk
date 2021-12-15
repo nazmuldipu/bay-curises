@@ -7,11 +7,17 @@ permalinkBypassOutputDir: true
 nickname: "You Thing"
 ---
 {% from "components/media-carousel.njk" import media_carousel %}
+{%- from "components/components.njk" import component -%}
 
-Page content goes here
-
-<div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
-    <article class="w-full max-w-screen-lg overflow-hidden">
-        {{ media_carousel(slides) }}
+<section class="relative w-full">
+    <article class="w-full overflow-hidden">
+        {{ media_carousel(slides, splitNav=true) }}
     </article>
-</div>
+    <article class="absolute top-2/4 ty-50 left-0 right-0 w-full max-w-5xl mx-auto z-10">
+        <div class="max-w-sm md:float-right text-left text-white px-4 md:px-0">
+            <div class="font-fair grid text-xl md:text-6xl font-bold tracking-wider mb-2 md:mb-5"><small class="text-sm md:text-3xl text-contrast">Introducing</small> Bay Cruise</div>
+            <div class="mb-2 md:mb-8">The first catamaran service between Teknaf and St Martins Island in less than 02 hours.</div>
+            {{component('buttons/link_button', slide_link)}}
+        </div>
+    </article>
+</section>

@@ -17,13 +17,13 @@
         unicode-range: U+000-5FF;
     }
     @font-face {
-      font-display: swap;
-      font-family: "Poppins";
-      src: url("../fonts/Poppins.woff2");
-      font-weight: 400;
-      font-style: normal;
-      unicode-range: U+000-5FF;
-  }
+        font-display: swap;
+        font-family: "Poppins";
+        src: url("../fonts/Poppins.woff2");
+        font-weight: 400;
+        font-style: normal;
+        unicode-range: U+000-5FF;
+    }
 
     body {
         background-color: white;
@@ -76,6 +76,46 @@
         border-left: 8px solid transparent;
         border-top: 8px solid #b21515;
     }
+    .ty-50 {
+        transform: translateY(-50%);
+    }
+    /* buttons */
+    .button {
+        padding: 15px 45px;
+        border-radius: 45px;
+        -moz-border-radius: 45px;
+        -webkit-border-radius: 45px;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+    .bg-dark{
+        color: black;
+        background-color: var(--color__text);        
+    }
+    
+    .bg-contrast {
+        color: black;
+        background-color: var(--color__contrast);
+    }
+
+    @media (max-width: 767px) {
+        .sm\:bg-contrast {
+            color: black;
+            background-color: var(--color__contrast);
+        }
+        .button {
+            padding: 10px 15px;
+            border-radius: 30px;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+            font-weight: 500;
+        }
+    }
+
+    /* colors */
+    .text-contrast {
+        color: var(--color__contrast);
+    }
 
     /* font classes */
     .font-fair {
@@ -83,5 +123,20 @@
     }
     .font-poppins {
         font-family: "Poppins", Arial, sans-serif;
+    }
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    @media (max-width: 767px) { 
+        .fixed-top {
+           position: initial;
+           background: var(--color__text)!important;
+        }
     }
 }

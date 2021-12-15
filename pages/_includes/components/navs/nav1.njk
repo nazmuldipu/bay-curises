@@ -1,7 +1,7 @@
 {%- from "components/global-image.njk" import global_image -%}
 
 {% macro nav_link(label, url, className="") %}
-    <a href="{{url}}" class="text-base text-gray-800 hover:text-blue-800 no-underline pt-1 font-poppins {{className}}">
+    <a href="{{url}}" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins {{className}}">
         {{label}}
     </a>
 {% endmacro %}
@@ -40,12 +40,12 @@
 {% endmacro %}
 {% macro company_logo() %}
     <a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
-        <img src = "images/logo.png" height="40" width="40" alt="Logo" class="h-10" />
-        <span class="font-semibold text-xl font-serif">Bay Cruise</span>
+        <img src = "images/logo.png" height="57" alt="Logo" class="h-20" />
+        <span class="font-semibold text-2xl font-serif text-white"><span class="text-4xl">Bay</span> <br/> Cruise</span>
     </a>
 {% endmacro %}
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 fixed-top pt-3 md:pt-5">
     <div class="flex justify-between items-center py-2 md:justify-start md:space-x-10">
         {# Company logo #}
         <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -55,7 +55,7 @@
         {# Burger button #}
         <div class="-mr-2 -my-2 md:hidden">
             <button type="button"
-                class="burger-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                class="burger-menu bg-transparent rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
                 aria-expanded="false">
                 <span class="sr-only">Open menu</span>
                 <!-- Heroicon name: outline/menu -->
@@ -85,8 +85,8 @@
         </div>
     </div>
 
-    <div class="flyby-mobile absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+    <div class="flyby-mobile absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-50">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-dark divide-y-2 divide-gray-50">
             <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                     {{company_logo()}}

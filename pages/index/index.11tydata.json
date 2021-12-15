@@ -7,7 +7,7 @@
                     "src": "images/slider1",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
-                    "sizes": "80vw",
+                    "sizes": "100vw",
                     "imgalt": "Front desk",
                     "intrinsicwidth": "2304"
                 },
@@ -27,7 +27,7 @@
                     "src": "images/slider2",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
-                    "sizes": "80vw",
+                    "sizes": "100vw",
                     "imgalt": "The Airstream Bar",
                     "intrinsicwidth": "2304"
                 },
@@ -47,7 +47,7 @@
                     "src": "images/slider3",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
-                    "sizes": "80vw",
+                    "sizes": "100vw",
                     "imgalt": "The Airstream Bar and lounge area",
                     "intrinsicwidth": "2304"
                 },
@@ -61,5 +61,10 @@
                 }
             ]
         }
-    ]
+    ],
+    "slide_link": {
+        "copy": "Read more",
+        "href": "/restaurant-menu",
+        "classes": ["button", "bg-contrast"]
+    }
 }
