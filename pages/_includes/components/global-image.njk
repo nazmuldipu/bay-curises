@@ -21,7 +21,7 @@
             {% endfor %}
             <img
                 {% if not carousel %}
-                    src="{{ image.src }}"
+                    src="{{ image.src }}.{{image.types | last}}"
                     srcset="{{ image | imgObjSrcSet(image.types | last ) }}"
                     loading="{{ 'lazy' if lazy else 'auto' }}"
                 {% else %}
