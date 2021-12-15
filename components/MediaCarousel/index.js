@@ -9,7 +9,7 @@ export default class MediaCarousel extends ProgressiveElement {
                 id: 'swiper',
                 behaviorPath: '../lib/swiper.js',
                 stylePaths: [
-                    "https://unpkg.com/swiper/swiper-bundle.min.css"
+                    "../lib/swiper-bundle.min.css"
                 ],
                 type: 'IntersectionObserver',
                 observerConfig: {

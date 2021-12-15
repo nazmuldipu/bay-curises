@@ -21,12 +21,17 @@ meta_description: Some description here
     {% endif %}
     <!-- end Google Analytics -->
     <meta charset="utf-8" />
+    <meta name="keywords"
+    content="Bay Cruise, Baycuise, Bay-Cruise, Ship, জাহাজ, travel, tours, Ship ticketing,, ship ticket, ship tickets bd, bdcruise, MV, M V, M V Bay, M V Bay Cruise, cruise ship, luxury cruise ship, luxury cruise, luxury cruise ship in bd" />
+    <meta name="description" content="Teknaf To Saint Martin Island Cruise Tour" />
+    <meta name="theme-color" content="#1b2445" />
+
     {% if meta_description %}
     <meta name="description" content="{{meta_description}}">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="./favicon.ico">
     <!-- start critical css -->
     {% if critical_css %}
     <style>
@@ -64,11 +69,31 @@ meta_description: Some description here
     <script src="{{module_js}}" type="module"></script>
     {% endif %}
     <!-- end scripts -->
+
+      <!-- twitter -->
+  <meta name="twitter:card" content="M.V. Bay Cruise | Ship" />
+  <meta name="twitter:site" content="@cruise-ship" />
+  <meta name="twitter:title" content="Bay Cruise" />
+  <meta name="twitter:description" content="Teknaf To Saint Martin Island Cruise Tour" />
+  <meta name="twitter:image" content="https://www.bay-cruises.com/images/logo.png" />
+
+    <!-- facebook and other social sites -->
+  <meta property="og:title" content="M.V. Bay Cruise | Ship " />
+  <meta property="og:site_name" content="Bay Cruise" />
+  <meta property="og:description" content="Teknaf To Saint Martin Island Cruise Tour" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.bay-cruises.com/images/logo.png" />
+  <meta property="og:url" content="https://www.bay-cruises.com/" />
+  <meta property="og:image:width" content="500" />
+  <meta property="og:image:height" content="300" />
+  <meta property="fb:app_id" content="329606335394853" />
+  <!-- facebook and other social sites -->
 </head>
 
 <body class="preload page-{{pagename}}">
     {% include "_page-header.njk" %}
     {{content | safe}}
+    {% include "_page_footer.njk" %}
     <script>
         document.body.classList.remove("preload");
         // start navbar dropdown

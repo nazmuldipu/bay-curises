@@ -92,6 +92,10 @@
         color: black;
         background-color: var(--color__text);        
     }
+    .bg-primary{
+        color: var(--color__secondary);
+        background-color: var(--color__primary);    
+    }
     
     .bg-contrast {
         color: black;
@@ -136,7 +140,7 @@
     @media (max-width: 767px) { 
         .fixed-top {
            position: initial;
-           background: var(--color__text)!important;
+           background: var(--color__primary)!important;
         }
     }
 }

@@ -105,7 +105,7 @@ var MediaCarousel = class extends progressive_element_default {
         id: "swiper",
         behaviorPath: "../lib/swiper.js",
         stylePaths: [
-          "https://unpkg.com/swiper/swiper-bundle.min.css"
+          "../lib/swiper-bundle.min.css"
         ],
         type: "IntersectionObserver",
         observerConfig: {
