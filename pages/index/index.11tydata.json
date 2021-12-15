@@ -94,7 +94,7 @@
         "sub_title": "Choose your seat",
         "image": {
             "alt": " ",
-            "src": "images/seat_plan.jpg",
+            "src": "images/seat_plan",
             "sizes": [
                 {
                     "src": "",
@@ -111,7 +111,7 @@
                     "intrinsicheight": 0
                 }
             ],
-            "types": [" webp", " jpg"],
+            "types": ["webp", "jpg"],
             "background": false,
             "intrinsicwidth": 2300,
             "intrinsicheight": 800
