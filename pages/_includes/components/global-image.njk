@@ -5,35 +5,40 @@
     #   @author Nazmul Alam
  #}
 {% macro global_image(image, classes, carousel=false, lazy = true, imgClass="") %}
-    {% set srcset = 'data-srcset' if carousel else 'srcset' %}
-    <picture class="{{ classes }}">
-        {% if image.sizes | length > 0 %}
-        {% for size in image.sizes %}
-            {% set defaultSrc = {
-                intrinsicwidth: (size.intrinsicwidth if size.intrinsicwidth else
-                image.intrinsicwidth), src : (size.src if size.src else
-                image.src
-                )} %}
-            {% for type in image.types %}
-                <source {% if carousel %} data-src="{{ defaultSrc.src }}" {% endif %}
-                        srcset="{{ defaultSrc | cmsImgObjSrcSet(type) }}" media="{{ size.media }}"
-                        sizes="{{ size.view }}" type="image/{{ type | trim }}">
+    {% if not image.background %}
+        <picture class="{{ classes }}">
+            {% for size in image.sizes %}
+                {% set defaultSrc = {
+                    intrinsicwidth: (size.intrinsicwidth if size.intrinsicwidth else
+                    image.intrinsicwidth), src : (size.src if size.src else
+                    image.src
+                    )} %}
+                {% for type in image.types %}
+                    <source {% if carousel %} data-src="{{ defaultSrc.src }}" {% endif %}
+                            srcset="{{ defaultSrc | imgObjSrcSet(type) }}" media="{{ size.media }}"
+                            sizes="{{ size.view }}" type="image/{{ type | trim }}">
+                {% endfor %}
             {% endfor %}
-        {% endfor %}
-        {% endif %}
-        <img
-                src="{{ image.src | theImgSrc }}"
-        {{ srcset }} = "{{ image | cmsImgObjSrcSet(image.types | last ) }}"
-        sizes = {{ (image.sizes | first).view }}
-        {% if not carousel %}
-            loading="{{ 'lazy' if lazy else 'auto' }}"
-        {% endif %}
-        class="{{ 'swiper-lazy' if carousel }} w-full {{ imgClass }}"
-        decoding="async"
-        alt="{{ image.alt }}">
+            <img
+                {% if not carousel %}
+                    src="{{ image.src }}"
+                    srcset="{{ image | imgObjSrcSet(image.types | last ) }}"
+                    loading="{{ 'lazy' if lazy else 'auto' }}"
+                {% else %}
+                    data-src="{{ image.src }}"
+                    data-srcset="{{ image | imgObjSrcSet(image.types | last ) }}"
+                {% endif %}
+                    sizes= {{ (image.sizes | first).view }}
+                    class="{{ 'swiper-lazy' if carousel }} w-full {{ imgClass }}"
+            decoding="async"
+            alt="{{ image.alt }}">
 
-        {% if image.credit %}
-            <p class="text-right text-xs mt-3">Credit: {{ image.credit }}</p>
-        {% endif %}
-    </picture>
+            {% if image.credit %}
+                <p class="text-right text-xs mt-3">Credit: {{ image.credit }}</p>
+            {% endif %}
+        </picture>
+    {% else %}
+        <div class="{{ classes }} bg-cover bg-center large:bg-inherit w-full"
+             style="background-image:url({{ image.src }})">{{ image.alt | safe }}</div>
+    {% endif %}
 {% endmacro %}

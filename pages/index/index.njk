@@ -8,6 +8,7 @@ nickname: "You Thing"
 ---
 {% from "components/media-carousel.njk" import media_carousel %}
 {%- from "components/components.njk" import component -%}
+{%- from "components/global-image.njk" import global_image -%}
 
 <section class="relative w-full">
     <article class="w-full overflow-hidden">
@@ -15,9 +16,61 @@ nickname: "You Thing"
     </article>
     <article class="absolute top-2/4 ty-50 left-0 right-0 w-full max-w-5xl mx-auto z-10">
         <div class="max-w-sm md:float-right text-left text-white px-4 md:px-0">
-            <div class="font-fair grid text-xl md:text-6xl font-bold tracking-wider mb-2 md:mb-5"><small class="text-sm md:text-3xl text-contrast">Introducing</small> Bay Cruise</div>
+            <div class="font-fair grid text-xl md:text-6xl font-bold tracking-wider mb-2 md:mb-5"><small class="text-sm md:text-3xl text-contrast font-poppins">Introducing</small> Bay Cruise</div>
             <div class="mb-2 md:mb-8">The first catamaran service between Teknaf and St Martins Island in less than 02 hours.</div>
             {{component('buttons/link_button', slide_link)}}
         </div>
+    </article>
+</section>
+
+{% macro schedule_card(item) %}
+    <article class="m-2 p-6 border rounded-xl cursor-pointer hover:shadow-lg hover:bg-gray-50 w-80">    
+        <header class="text-xl font-bold pb-5">{{item.route}} ({{item.title}})</header>
+        <div class="text-base text-gray-600">Reporting  : <strong>{{item.reporting }}</strong> </div>
+        <div class="text-base text-gray-600">Departure  : <strong>{{item.departure }}</strong> </div>
+        <div class="text-base text-gray-600">Day : <strong>{{item.day}}</strong>  </div>
+        <div class="text-base text-gray-600">Starting Point : <strong>{{item.location}}</strong>  </div>
+        <div class="text-base text-gray-600">App. Arival Time : <strong>{{item.arrival}}</strong>  </div>
+    </article>
+{% endmacro %}
+
+{# Schedule #}
+<section class="max-w-4xl mx-auto py-10">
+    {{component('headings/section', schedule)}}
+    <article class="py-10 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+        {{schedule_card(schedule.up)}}
+        {{schedule_card(schedule.down)}}
+    </article>
+</section>
+
+{# Seat plan #}
+<section class="max-w-6xl mx-auto py-10">
+    {{component('headings/section', seat_map)}}
+    <article class="py-10">
+        {{global_image(seat_map.image)}}
+        <p class="text-center font-semibold">Fig: Our Seat Plan </p>
+    </article>
+</section>
+
+{% macro price_card(item) %}
+    <div class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200 text-center w-80 my-10 ">
+        <div class="p-6">
+          <h2 class="text-lg leading-6 font-medium text-gray-900">{{item.title}}</h2>
+          <p class="my-8">
+            <span class="text-4xl font-extrabold text-gray-900">৳{{item.price}}</span>
+            <span class="text-base font-medium text-gray-500">/Person</span>
+          </p>
+          <h4 class="text-xl font-medium">{{item.zone}}</h4>
+          <a href="tel:01826191509" class="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Buy Now</a>
+        </div>        
+    </div>
+{% endmacro %}
+{# Price list #}
+<section class="max-w-6xl mx-auto py-10">
+    {{component('headings/section', price_map)}}
+    <article class="py-10 grid grid-cols-1 md:grid-cols-3 justify-items-center">
+        {% for item in price_map.price_list%}
+            {{price_card(item)}}
+        {% endfor %}
     </article>
 </section>

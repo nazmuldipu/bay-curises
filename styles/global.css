@@ -120,6 +120,12 @@
     .text-contrast {
         color: var(--color__contrast);
     }
+    .text-light {
+        color: var(--color__text-light);
+    }
+    .text-text {
+        color: var(--color__text);
+    }
 
     /* font classes */
     .font-fair {

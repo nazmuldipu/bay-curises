@@ -66,5 +66,76 @@
         "copy": "Read more",
         "href": "/restaurant-menu",
         "classes": ["button", "bg-contrast"]
+    },
+    "schedule": {
+        "title": "Our Schedule",
+        "sub_title": "We are always on time",
+        "up": {
+            "title": "Up",
+            "route": "Teknaf to Saintmartin",
+            "reporting": "9:00 AM",
+            "departure": "9:30 AM",
+            "day": "Everyday",
+            "location": "Teknaf Ghat",
+            "arrival": "11:30 AM"
+        },
+        "down": {
+            "title": "Down",
+            "route": "Saintmartin to Teknaf",
+            "reporting": "2:30PM",
+            "departure": "3:00PM",
+            "day": "Everyday",
+            "location": "Saintmartin Ghat",
+            "arrival": "5:00 PM"
+        }
+    },
+    "seat_map": {
+        "title": "Our Seat Plan",
+        "sub_title": "Choose your seat",
+        "image": {
+            "alt": " ",
+            "src": "images/seat_plan.jpg",
+            "sizes": [
+                {
+                    "src": "",
+                    "view": "100vw",
+                    "media": "(max-width:767px)",
+                    "intrinsicwidth": 0,
+                    "intrinsicheight": 0
+                },
+                {
+                    "src": "",
+                    "view": "90vw",
+                    "media": "(min-width:767px)",
+                    "intrinsicwidth": 0,
+                    "intrinsicheight": 0
+                }
+            ],
+            "types": [" webp", " jpg"],
+            "background": false,
+            "intrinsicwidth": 2300,
+            "intrinsicheight": 800
+        }
+    },
+    "price_map": {
+        "title": "Our Ticket Price",
+        "sub_title": "Best price for your ticket",
+        "price_list": [
+            {
+                "title": "Rajanigandha",
+                "zone": "Green Zone",
+                "price": "1400"
+            },
+            {
+                "title": "Hasnahena",
+                "zone": "Blue Zone",
+                "price": "1500"
+            },
+            {
+                "title": "Krisnochura",
+                "zone": "Red Zone",
+                "price": "1600"
+            }
+        ]
     }
 }
