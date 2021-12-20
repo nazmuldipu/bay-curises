@@ -7,7 +7,7 @@
   ],
   "navbar": [
     { "label": "Home", "link": "index.html" },
-    { "label": "About", "link": "about_us.html" },
+    { "label": "About", "link": "about.html" },
     { "label": "Schedule", "link": "schedule.html" },
     { "label": "Services", "link": "our_services.html" },
     { "label": "Contact", "link": "contact_us.html" }

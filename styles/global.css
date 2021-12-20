@@ -93,7 +93,6 @@
         background-color: var(--color__text);        
     }
     .bg-primary{
-        color: var(--color__secondary);
         background-color: var(--color__primary);    
     }
     
@@ -141,12 +140,12 @@
         right: 0;
         left: 0;
         z-index: 1030;
+        /* background: var(--color__primary)!important; */
     }
 
     @media (max-width: 767px) { 
         .fixed-top {
            position: initial;
-           background: var(--color__primary)!important;
         }
     }
 }

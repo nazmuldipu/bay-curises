@@ -14,14 +14,14 @@
 <!-- start critical css -->
 <!-- end critical css -->
 <!-- start sync css -->
-<link rel="stylesheet" type="text/css" href="molecules\molecules-sync.css">
+<link rel="stylesheet" type="text/css" href="molecules/molecules-sync.css">
 <!-- end sync css -->
 <!-- start font preloads -->
 <link rel="preload" href="fonts/SpaceMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <!-- end font preloads -->
 <!-- start scripts -->
-<script src="molecules\molecules-defer.js" defer="defer"></script>
-<script src="molecules\molecules-module.js" type="module"></script>
+<script src="molecules/molecules-defer.js" defer="defer"></script>
+<script src="molecules/molecules-module.js" type="module"></script>
 <!-- end scripts -->
 <!-- twitter -->
 <meta name="twitter:card" content="M.V. Bay Cruise | Ship">
@@ -42,12 +42,15 @@
 <!-- facebook and other social sites -->
 </head>
 <body class="preload page-molecules">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 fixed-top pt-3 md:pt-5">
+<div id="app_nav" class="fixed-top bg-primary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 pt-3 md:pt-5">
 <div class="flex justify-between items-center py-2 md:justify-start md:space-x-10">
 <div class="flex justify-start lg:w-0 lg:flex-1">
 <a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
 <img src="images/logo.png" height="57" alt="Logo" class="h-20">
-<span class="font-semibold text-2xl font-serif text-white"><span class="text-4xl">Bay</span><br>Cruise</span>
+<span class="font-semibold text-2xl font-serif text-white">
+<span class="text-4xl">Bay</span>
+<br>Cruise</span>
 </a>
 </div>
 <div class="-mr-2 -my-2 md:hidden">
@@ -63,7 +66,7 @@
 <a href="index.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins">
 Home
 </a>
-<a href="about_us.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins">
+<a href="about.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins">
 About
 </a>
 <a href="schedule.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins">
@@ -88,7 +91,9 @@ Contact
 <div class="flex items-center justify-between">
 <a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
 <img src="images/logo.png" height="57" alt="Logo" class="h-20">
-<span class="font-semibold text-2xl font-serif text-white"><span class="text-4xl">Bay</span><br>Cruise</span>
+<span class="font-semibold text-2xl font-serif text-white">
+<span class="text-4xl">Bay</span>
+<br>Cruise</span>
 </a>
 <div class="-mr-2">
 <button type="button" class="burger-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
@@ -105,7 +110,7 @@ Contact
 <a href="index.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
 Home
 </a>
-<a href="about_us.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+<a href="about.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
 About
 </a>
 <a href="schedule.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
@@ -130,6 +135,7 @@ Welcome to
 Bay Coruiser
 </a>
 </p>
+</div>
 </div>
 </div>
 </div>
@@ -159,12 +165,15 @@ h6. heading
 <hr>
 <h2>Nav</h2>
 <div class="bg-blue-100 py-2">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 fixed-top pt-3 md:pt-5">
+<div id="app_nav" class="fixed-top bg-primary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 pt-3 md:pt-5">
 <div class="flex justify-between items-center py-2 md:justify-start md:space-x-10">
 <div class="flex justify-start lg:w-0 lg:flex-1">
 <a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
 <img src="images/logo.png" height="57" alt="Logo" class="h-20">
-<span class="font-semibold text-2xl font-serif text-white"><span class="text-4xl">Bay</span><br>Cruise</span>
+<span class="font-semibold text-2xl font-serif text-white">
+<span class="text-4xl">Bay</span>
+<br>Cruise</span>
 </a>
 </div>
 <div class="-mr-2 -my-2 md:hidden">
@@ -180,7 +189,7 @@ h6. heading
 <a href="index.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins">
 Home
 </a>
-<a href="about_us.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins">
+<a href="about.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins">
 About
 </a>
 <a href="schedule.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins">
@@ -205,7 +214,9 @@ Contact
 <div class="flex items-center justify-between">
 <a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
 <img src="images/logo.png" height="57" alt="Logo" class="h-20">
-<span class="font-semibold text-2xl font-serif text-white"><span class="text-4xl">Bay</span><br>Cruise</span>
+<span class="font-semibold text-2xl font-serif text-white">
+<span class="text-4xl">Bay</span>
+<br>Cruise</span>
 </a>
 <div class="-mr-2">
 <button type="button" class="burger-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
@@ -222,7 +233,7 @@ Contact
 <a href="index.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
 Home
 </a>
-<a href="about_us.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
+<a href="about.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
 About
 </a>
 <a href="schedule.html" class="text-base text-white hover:text-blue-800 no-underline pt-1 font-poppins hover:bg-gray-50 py-2 font-medium pl-5">
@@ -247,6 +258,7 @@ Welcome to
 Bay Coruiser
 </a>
 </p>
+</div>
 </div>
 </div>
 </div>

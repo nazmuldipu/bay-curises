@@ -1,0 +1,1 @@
+console.log('about defer.js');
