@@ -20,7 +20,7 @@
             <div class="swiper-wrapper z-10">
                     {% for slide in slides %}
                         <div class="swiper-slide">
-                            {{global_image(slide, classes='image_frame sm:4:3 md:16:9')}}
+                            {{global_image(slide, classes='image_frame sm:4:3 md:16:9', carousel=true)}}
                         </div>
                     {% endfor %}
             </div>

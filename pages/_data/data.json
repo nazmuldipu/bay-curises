@@ -39,6 +39,7 @@
             { "label": "About", "link": "about.html" },
             { "label": "Schedule", "link": "schedule.html" },
             { "label": "Services", "link": "our_services.html" },
+            { "label": "Gallery", "link": "gallery.html" },
             { "label": "Contact", "link": "contact_us.html" }
         ]
     },

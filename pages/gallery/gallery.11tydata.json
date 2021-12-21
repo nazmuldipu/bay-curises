@@ -1,0 +1,369 @@
+{
+    "title":"Gallery",
+    "content":{
+        "title": "Gallery",
+        "sub_title": "Visit our memory lane",
+        "images": [
+            {
+                "alt": "Gallery 1",
+                "src": "images/ship_1",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "ship_2",
+                "src": "images/ship_2",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "ship_3",
+                "src": "images/ship_3",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "ship_4",
+                "src": "images/ship_4",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "ship_5",
+                "src": "images/ship_5",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "ship_6",
+                "src": "images/ship_6",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "krishnachura_1",
+                "src": "images/krishnachura_1",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "krishnachura_2",
+                "src": "images/krishnachura_2",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "krishnachura_3",
+                "src": "images/krishnachura_3",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "hasnahena_1",
+                "src": "images/hasnahena_1",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "hasnahena_2",
+                "src": "images/hasnahena_2",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpeg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "rajanigandha_1",
+                "src": "images/rajanigandha_1",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "rajanigandha_2",
+                "src": "images/rajanigandha_2",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpeg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "outdoor_1",
+                "src": "images/outdoor_1",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            },
+            {
+                "alt": "outdoor_2",
+                "src": "images/outdoor_2",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "80vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "20vw",
+                        "media": "(min-width:768px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "jpg"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            }
+        ]
+    }
+}
