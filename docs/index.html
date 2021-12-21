@@ -47,7 +47,13 @@
 <div class="flex justify-between items-center py-2 md:justify-start md:space-x-10">
 <div class="flex justify-start lg:w-0 lg:flex-1">
 <a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
-<img src="images/logo.png" height="57" alt="Logo" class="h-20">
+<picture class="h-16 w-16 image_frame">
+<source srcset="images/logo.webp 2300w, images/logo_300.webp 300w, images/logo_600.webp 600w" media="(max-width:767px)" sizes="100vw" type="image/webp">
+<source srcset="images/logo.png 2300w, images/logo_300.png 300w, images/logo_600.png 600w" media="(max-width:767px)" sizes="100vw" type="image/png">
+<source srcset="images/logo.webp 2300w, images/logo_300.webp 300w, images/logo_600.webp 600w" media="(min-width:767px)" sizes="90vw" type="image/webp">
+<source srcset="images/logo.png 2300w, images/logo_300.png 300w, images/logo_600.png 600w" media="(min-width:767px)" sizes="90vw" type="image/png">
+<img src="images/logo.png" srcset="images/logo.png 2300w, images/logo_300.png 300w, images/logo_600.png 600w" sizes="100vw" loading="lazy" class="w-full" decoding="async" alt="Seat plan">
+</picture>
 <span class="font-semibold text-2xl font-serif text-white">
 <span class="text-4xl">Bay</span>
 <br>Cruise</span>
@@ -90,7 +96,13 @@ Contact
 <div class="pt-5 pb-6 px-5">
 <div class="flex items-center justify-between">
 <a href="/" class="grid grid-flow-col auto-cols-max gap-2 items-center no-underline">
-<img src="images/logo.png" height="57" alt="Logo" class="h-20">
+<picture class="h-16 w-16 image_frame">
+<source srcset="images/logo.webp 2300w, images/logo_300.webp 300w, images/logo_600.webp 600w" media="(max-width:767px)" sizes="100vw" type="image/webp">
+<source srcset="images/logo.png 2300w, images/logo_300.png 300w, images/logo_600.png 600w" media="(max-width:767px)" sizes="100vw" type="image/png">
+<source srcset="images/logo.webp 2300w, images/logo_300.webp 300w, images/logo_600.webp 600w" media="(min-width:767px)" sizes="90vw" type="image/webp">
+<source srcset="images/logo.png 2300w, images/logo_300.png 300w, images/logo_600.png 600w" media="(min-width:767px)" sizes="90vw" type="image/png">
+<img src="images/logo.png" srcset="images/logo.png 2300w, images/logo_300.png 300w, images/logo_600.png 600w" sizes="100vw" loading="lazy" class="w-full" decoding="async" alt="Seat plan">
+</picture>
 <span class="font-semibold text-2xl font-serif text-white">
 <span class="text-4xl">Bay</span>
 <br>Cruise</span>
@@ -158,78 +170,30 @@ Bay Coruiser
 </nav>
 <div class="swiper-wrapper z-10">
 <div class="swiper-slide">
-<picture>
-<source data-src="images/slider1.webp" data-srcset="images/slider1.webp 2304w,
-images/slider1_1200.webp 1200w,
-images/slider1_300.webp 300w,
-images/slider1_600.webp 600w" media="(min-width:900.1px)" sizes="100vw" type="image/webp">
-<source data-src="images/slider1.jpg" data-srcset="images/slider1.jpg 2304w,
-images/slider1_1200.jpg 1200w,
-images/slider1_300.jpg 300w,
-images/slider1_600.jpg 600w" media="(min-width:900.1px)" sizes="100vw" type="image/jpeg">
-<source data-src="images/slider1.webp" data-srcset="images/slider1.webp 2304w,
-images/slider1_1200.webp 1200w,
-images/slider1_300.webp 300w,
-images/slider1_600.webp 600w" media="(max-width:900px)" sizes="100vw" type="image/webp">
-<source data-src="images/slider1.jpg" data-srcset="images/slider1.jpg 2304w,
-images/slider1_1200.jpg 1200w,
-images/slider1_300.jpg 300w,
-images/slider1_600.jpg 600w" media="(max-width:900px)" sizes="100vw" type="image/jpeg">
-<img data-srcset="images/slider1.jpg 2304w,
-images/slider1_1200.jpg 1200w,
-images/slider1_300.jpg 300w,
-images/slider1_600.jpg 600w" data-src="images/slider1.jpg" class="swiper-lazy w-full h-auto" sizes="100vw" alt="Front desk">
-<div class="swiper-lazy-preloader"></div>
+<picture class="image_frame sm:4:3 md:16:9">
+<source srcset="images/slider1.webp 2300w, images/slider1_1200.webp 1200w, images/slider1_300.webp 300w, images/slider1_600.webp 600w" media="(max-width:767px)" sizes="100vw" type="image/webp">
+<source srcset="images/slider1.jpg 2300w, images/slider1_1200.jpg 1200w, images/slider1_300.jpg 300w, images/slider1_600.jpg 600w" media="(max-width:767px)" sizes="100vw" type="image/jpg">
+<source srcset="images/slider1.webp 2300w, images/slider1_1200.webp 1200w, images/slider1_300.webp 300w, images/slider1_600.webp 600w" media="(min-width:767px)" sizes="90vw" type="image/webp">
+<source srcset="images/slider1.jpg 2300w, images/slider1_1200.jpg 1200w, images/slider1_300.jpg 300w, images/slider1_600.jpg 600w" media="(min-width:767px)" sizes="90vw" type="image/jpg">
+<img src="images/slider1.jpg" srcset="images/slider1.jpg 2300w, images/slider1_1200.jpg 1200w, images/slider1_300.jpg 300w, images/slider1_600.jpg 600w" sizes="100vw" loading="lazy" class="w-full" decoding="async" alt="Hero Carousel 1">
 </picture>
 </div>
 <div class="swiper-slide">
-<picture>
-<source data-src="images/slider2.webp" data-srcset="images/slider2.webp 2304w,
-images/slider2_1200.webp 1200w,
-images/slider2_300.webp 300w,
-images/slider2_600.webp 600w" media="(min-width:900.1px)" sizes="100vw" type="image/webp">
-<source data-src="images/slider2.jpg" data-srcset="images/slider2.jpg 2304w,
-images/slider2_1200.jpg 1200w,
-images/slider2_300.jpg 300w,
-images/slider2_600.jpg 600w" media="(min-width:900.1px)" sizes="100vw" type="image/jpeg">
-<source data-src="images/slider2.webp" data-srcset="images/slider2.webp 2304w,
-images/slider2_1200.webp 1200w,
-images/slider2_300.webp 300w,
-images/slider2_600.webp 600w" media="(max-width:900px)" sizes="100vw" type="image/webp">
-<source data-src="images/slider2.jpg" data-srcset="images/slider2.jpg 2304w,
-images/slider2_1200.jpg 1200w,
-images/slider2_300.jpg 300w,
-images/slider2_600.jpg 600w" media="(max-width:900px)" sizes="100vw" type="image/jpeg">
-<img data-srcset="images/slider2.jpg 2304w,
-images/slider2_1200.jpg 1200w,
-images/slider2_300.jpg 300w,
-images/slider2_600.jpg 600w" data-src="images/slider2.jpg" class="swiper-lazy w-full h-auto" sizes="100vw" alt="The Airstream Bar">
-<div class="swiper-lazy-preloader"></div>
+<picture class="image_frame sm:4:3 md:16:9">
+<source srcset="images/slider2.webp 2300w, images/slider2_1200.webp 1200w, images/slider2_300.webp 300w, images/slider2_600.webp 600w" media="(max-width:767px)" sizes="100vw" type="image/webp">
+<source srcset="images/slider2.jpg 2300w, images/slider2_1200.jpg 1200w, images/slider2_300.jpg 300w, images/slider2_600.jpg 600w" media="(max-width:767px)" sizes="100vw" type="image/jpg">
+<source srcset="images/slider2.webp 2300w, images/slider2_1200.webp 1200w, images/slider2_300.webp 300w, images/slider2_600.webp 600w" media="(min-width:767px)" sizes="90vw" type="image/webp">
+<source srcset="images/slider2.jpg 2300w, images/slider2_1200.jpg 1200w, images/slider2_300.jpg 300w, images/slider2_600.jpg 600w" media="(min-width:767px)" sizes="90vw" type="image/jpg">
+<img src="images/slider2.jpg" srcset="images/slider2.jpg 2300w, images/slider2_1200.jpg 1200w, images/slider2_300.jpg 300w, images/slider2_600.jpg 600w" sizes="100vw" loading="lazy" class="w-full" decoding="async" alt="Hero Carousel 2">
 </picture>
 </div>
 <div class="swiper-slide">
-<picture>
-<source data-src="images/slider3.webp" data-srcset="images/slider3.webp 2304w,
-images/slider3_1200.webp 1200w,
-images/slider3_300.webp 300w,
-images/slider3_600.webp 600w" media="(min-width:900.1px)" sizes="100vw" type="image/webp">
-<source data-src="images/slider3.jpg" data-srcset="images/slider3.jpg 2304w,
-images/slider3_1200.jpg 1200w,
-images/slider3_300.jpg 300w,
-images/slider3_600.jpg 600w" media="(min-width:900.1px)" sizes="100vw" type="image/jpeg">
-<source data-src="images/slider3.webp" data-srcset="images/slider3.webp 2304w,
-images/slider3_1200.webp 1200w,
-images/slider3_300.webp 300w,
-images/slider3_600.webp 600w" media="(max-width:900px)" sizes="100vw" type="image/webp">
-<source data-src="images/slider3.jpg" data-srcset="images/slider3.jpg 2304w,
-images/slider3_1200.jpg 1200w,
-images/slider3_300.jpg 300w,
-images/slider3_600.jpg 600w" media="(max-width:900px)" sizes="100vw" type="image/jpeg">
-<img data-srcset="images/slider3.jpg 2304w,
-images/slider3_1200.jpg 1200w,
-images/slider3_300.jpg 300w,
-images/slider3_600.jpg 600w" data-src="images/slider3.jpg" class="swiper-lazy w-full h-auto" sizes="100vw" alt="The Airstream Bar and lounge area">
-<div class="swiper-lazy-preloader"></div>
+<picture class="image_frame sm:4:3 md:16:9">
+<source srcset="images/slider3.webp 2300w, images/slider3_1200.webp 1200w, images/slider3_300.webp 300w, images/slider3_600.webp 600w" media="(max-width:767px)" sizes="100vw" type="image/webp">
+<source srcset="images/slider3.jpg 2300w, images/slider3_1200.jpg 1200w, images/slider3_300.jpg 300w, images/slider3_600.jpg 600w" media="(max-width:767px)" sizes="100vw" type="image/jpg">
+<source srcset="images/slider3.webp 2300w, images/slider3_1200.webp 1200w, images/slider3_300.webp 300w, images/slider3_600.webp 600w" media="(min-width:767px)" sizes="90vw" type="image/webp">
+<source srcset="images/slider3.jpg 2300w, images/slider3_1200.jpg 1200w, images/slider3_300.jpg 300w, images/slider3_600.jpg 600w" media="(min-width:767px)" sizes="90vw" type="image/jpg">
+<img src="images/slider3.jpg" srcset="images/slider3.jpg 2300w, images/slider3_1200.jpg 1200w, images/slider3_300.jpg 300w, images/slider3_600.jpg 600w" sizes="100vw" loading="lazy" class="w-full" decoding="async" alt="Hero Carousel 3">
 </picture>
 </div>
 </div>
@@ -271,12 +235,12 @@ Read more
 <section class="max-w-6xl mx-auto py-10">
 <header class="text-center font-poppins text-sm md:text-3xl text-light">Choose your seat <span class="block font-fair font-bold tracking-wider text-xl md:text-6xl text-text">Our Seat Plan</span></header>
 <article class="py-10">
-<picture class="">
+<picture class="image_frame sm:2:1">
 <source srcset="images/seat_plan.webp 2300w, images/seat_plan_1200.webp 1200w, images/seat_plan_300.webp 300w, images/seat_plan_600.webp 600w" media="(max-width:767px)" sizes="100vw" type="image/webp">
 <source srcset="images/seat_plan.jpg 2300w, images/seat_plan_1200.jpg 1200w, images/seat_plan_300.jpg 300w, images/seat_plan_600.jpg 600w" media="(max-width:767px)" sizes="100vw" type="image/jpg">
 <source srcset="images/seat_plan.webp 2300w, images/seat_plan_1200.webp 1200w, images/seat_plan_300.webp 300w, images/seat_plan_600.webp 600w" media="(min-width:767px)" sizes="90vw" type="image/webp">
 <source srcset="images/seat_plan.jpg 2300w, images/seat_plan_1200.jpg 1200w, images/seat_plan_300.jpg 300w, images/seat_plan_600.jpg 600w" media="(min-width:767px)" sizes="90vw" type="image/jpg">
-<img src="images/seat_plan.jpg" srcset="images/seat_plan.jpg 2300w, images/seat_plan_1200.jpg 1200w, images/seat_plan_300.jpg 300w, images/seat_plan_600.jpg 600w" loading="lazy" sizes="100vw" class="w-full" decoding="async" alt="Seat plan">
+<img src="images/seat_plan.jpg" srcset="images/seat_plan.jpg 2300w, images/seat_plan_1200.jpg 1200w, images/seat_plan_300.jpg 300w, images/seat_plan_600.jpg 600w" sizes="100vw" loading="lazy" class="w-full" decoding="async" alt="Seat plan">
 </picture>
 <p class="text-center font-semibold">Fig: Our Seat Plan</p>
 </article>
