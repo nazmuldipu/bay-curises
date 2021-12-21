@@ -1,200 +1,237 @@
 {
-  "preload_fonts": [
-    {
-      "href": "fonts/SpaceMono-Regular.ttf",
-      "type": "font/ttf"
-    }
-  ],
-  "navbar": [
-    { "label": "Home", "link": "index.html" },
-    { "label": "About", "link": "about.html" },
-    { "label": "Schedule", "link": "schedule.html" },
-    { "label": "Services", "link": "our_services.html" },
-    { "label": "Contact", "link": "contact_us.html" }
-  ],
-  "index": {},
-  "about": {
-    "name": "About us",
-    "title": "Why we are best",
-    "description": "We are one of the largest Internet Service Provider and the leader in the telecommunications market.",
-    "features": [
-      {
-        "title": "24/7 Customer Service",
-        "description": "How many times have you reached out to customer support and spent days waiting for a response? We will response you 24 houra a day 7 day a week.  Our youth and enthusiastic team always ready to serve you."
-      },
-      {
-        "title": "Hight Speed at low rate",
-        "description": "Video chats, e-commerce, online gaming and stock trading - nobody doubted the benefits of broadband. Now better availability at a low price is turning the virtual dream into a reality."
-      },
-      {
-        "title": "Special Discount on new connection",
-        "description": "Janani-bd is offering a special discount on new connections that will help you enjoy hight speed internet with your family at a super affordable price."
-      }
-    ]
-  },
-  "packages": {
-    "name": "Packages",
-    "title": "Chose you package",
-    "description": "",
-    "packages": [
-      {
-        "name": "Basic",
-        "price": "600",
-        "features": [
-          "Speed up to <b>2mbps</b>",
-          "Unlimited traffic",
-          "40mbps YouTube",
-          "40mbps BDIX"
-        ],
-        "cta": { "label": "Join now", "url": "/join.html" }
-      },
-      {
-        "name": "Standard",
-        "price": "700",
-        "features": [
-          "Speed up to <b>3mbps</b>",
-          "Unlimited traffic",
-          "50mbps YouTube",
-          "50mbps BDIX"
-        ],
-        "cta": { "label": "Join now", "url": "/join.html" }
-      },
-      {
-        "name": "Value",
-        "price": "800",
-        "features": [
-          "Speed up to <b>4mbps</b>",
-          "Unlimited traffic",
-          "60mbps YouTube",
-          "60mbps BDIX"
-        ],
-        "cta": { "label": "Join now", "url": "/join.html" }
-      },
-      {
-        "name": "Preminum",
-        "price": "850",
-        "features": [
-          "Speed up to <b>5mbps</b>",
-          "Unlimited traffic",
-          "70mbps YouTube",
-          "70mbps BDIX"
-        ],
-        "cta": { "label": "Join now", "url": "/join.html" },
-        "popular": true
-      },
-      {
-        "name": "Gamer",
-        "price": "900",
-        "features": [
-          "Speed up to <b>6mbps</b>",
-          "Unlimited traffic",
-          "80mbps YouTube",
-          "80mbps BDIX"
-        ],
-        "cta": { "label": "Join now", "url": "/join.html" },
-        "popular": true
-      },
-      {
-        "name": "Power",
-        "price": "1000",
-        "features": [
-          "Speed up to <b>10mbps</b>",
-          "Unlimited traffic",
-          "100mbps YouTube",
-          "100mbps BDIX"
-        ],
-        "cta": { "label": "Join now", "url": "/join.html" }
-      }
-    ]
-  },
-  "our_services": {
-    "name": "Our Services",
-    "title": "What we offer for you",
-    "description": "We are one of the largest Internet Service Provider and the leader in the telecommunications market.",
-    "services": [
-      {
-        "title": "Best selling plans",
-        "character": "selling_plans.svg",
-        "description": "At Janani, our goal is to help you find the best available internet plan for your home. For many, the cheapest internet plans or value-priced high-speed plans are best.",
-        "features": [
-          "New connection with in 24 hours",
-          "Pay optimum as your requirement",
-          "One stop service"
-        ]
-      },
-      {
-        "title": "Broadband",
-        "character": "broadband.svg",
-        "description": "Wide bandwidth data transmission which transports multiple signals and traffic types. The medium can be coaxial cable, optical fiber, radio or twisted pair.",
-        "features": [
-          "Fiber",
-          "Cable",
-          "Connected 24/7 hrs",
-          "Desired Bandwidth",
-          "Enjoy the internet facility in its true sense"
-        ]
-      },
-      {
-        "title": "Wifi Zone",
-        "character": "wifi.svg",
-        "description": "Getting unlimited WiFi saves your regular mobile data allowance for when you really need it. We have setup wifi networks offering hotspot access. Janani Technology Limited is your trusty guide.",
-        "features": [
-          "No need for cabling",
-          "Secure internet connection",
-          "Scalable and Robust sytem"
-        ]
-      },
-      {
-        "title": "Pay Bills (all users)",
-        "character": "pay_online.svg",
-        "description": "Users can pay any amount of internet bill 24/7 from anywhere without any extra charge.",
-        "features": [
-          "Hassel free",
-          "Pay from home",
-          "Digital invoice will be send"
-        ]
-      },
-      {
-        "title": "New Connection",
-        "character": "new_connection.svg",
-        "description": "Best internet service provider in Bangladesh which provides fully dedicated, super fast, cost-effective, secured internet connection. We’re promised to meeting your needs and delivering industry-leading customer service.",
-        "features": [
-          "Corporate Internet",
-          "Home Internet",
-          "Hosting & Development",
-          "IPTSP"
-        ]
-      },
-      {
-        "title": "Secure Service",
-        "character": "secure_login.svg",
-        "description": "We offer a comprehensive range of protection for your online devices. While basic virus protection is the always the base feature, others that these packages might offer include ransomware protection, a VPN, and even a password manager. These really are all-singing all-dancing online security downloads for those wanting the best possible protection.",
-        "features": [
-          "Tracks down and destroy any existing malware hiding in a PC",
-          "Detects spyware threats and destroys each infection.",
-          "Scans, detects & removes rootkits on your computer.",
-          "Prevents malicious software turning your PC into a zombie.",
-          "Enroll right away"
-        ]
-      }
-    ]
-  },
-  "logo": {
-    "src": "images/logo_sm",
-    "types": ["webp", "jpg"],
-    "sizes": [
-      {
-        "view": "10vw",
-        "media": "(max-width:900px)"
-      },
-      {
-        "view": "20vw",
-        "media": "(min-width:900.1px)"
-      }
+    "preload_fonts": [
+        {
+            "href": "fonts/SpaceMono-Regular.ttf",
+            "type": "font/ttf"
+        }
     ],
-    "alt": "Logo",
-    "intrinsicwidth": 80,
-    "intrinsicheight": 80,
-    "background": false
-  }
+    "navbar": {
+        "logo": {
+            "title": "Our Seat Plan",
+            "sub_title": "Choose your seat",
+            "image": {
+                "alt": "Seat plan",
+                "src": "images/logo",
+                "sizes": [
+                    {
+                        "src": "",
+                        "view": "100vw",
+                        "media": "(max-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    },
+                    {
+                        "src": "",
+                        "view": "90vw",
+                        "media": "(min-width:767px)",
+                        "intrinsicwidth": 0,
+                        "intrinsicheight": 0
+                    }
+                ],
+                "types": ["webp", "png"],
+                "background": false,
+                "intrinsicwidth": 2300,
+                "intrinsicheight": 800
+            }
+        },
+        "links": [
+            { "label": "Home", "link": "index.html" },
+            { "label": "About", "link": "about.html" },
+            { "label": "Schedule", "link": "schedule.html" },
+            { "label": "Services", "link": "our_services.html" },
+            { "label": "Gallery", "link": "gallery.html" },
+            { "label": "Contact", "link": "contact_us.html" }
+        ]
+    },
+    "index": {},
+    "about": {
+        "name": "About us",
+        "title": "Why we are best",
+        "description": "We are one of the largest Internet Service Provider and the leader in the telecommunications market.",
+        "features": [
+            {
+                "title": "24/7 Customer Service",
+                "description": "How many times have you reached out to customer support and spent days waiting for a response? We will response you 24 houra a day 7 day a week.  Our youth and enthusiastic team always ready to serve you."
+            },
+            {
+                "title": "Hight Speed at low rate",
+                "description": "Video chats, e-commerce, online gaming and stock trading - nobody doubted the benefits of broadband. Now better availability at a low price is turning the virtual dream into a reality."
+            },
+            {
+                "title": "Special Discount on new connection",
+                "description": "Janani-bd is offering a special discount on new connections that will help you enjoy hight speed internet with your family at a super affordable price."
+            }
+        ]
+    },
+    "packages": {
+        "name": "Packages",
+        "title": "Chose you package",
+        "description": "",
+        "packages": [
+            {
+                "name": "Basic",
+                "price": "600",
+                "features": [
+                    "Speed up to <b>2mbps</b>",
+                    "Unlimited traffic",
+                    "40mbps YouTube",
+                    "40mbps BDIX"
+                ],
+                "cta": { "label": "Join now", "url": "/join.html" }
+            },
+            {
+                "name": "Standard",
+                "price": "700",
+                "features": [
+                    "Speed up to <b>3mbps</b>",
+                    "Unlimited traffic",
+                    "50mbps YouTube",
+                    "50mbps BDIX"
+                ],
+                "cta": { "label": "Join now", "url": "/join.html" }
+            },
+            {
+                "name": "Value",
+                "price": "800",
+                "features": [
+                    "Speed up to <b>4mbps</b>",
+                    "Unlimited traffic",
+                    "60mbps YouTube",
+                    "60mbps BDIX"
+                ],
+                "cta": { "label": "Join now", "url": "/join.html" }
+            },
+            {
+                "name": "Preminum",
+                "price": "850",
+                "features": [
+                    "Speed up to <b>5mbps</b>",
+                    "Unlimited traffic",
+                    "70mbps YouTube",
+                    "70mbps BDIX"
+                ],
+                "cta": { "label": "Join now", "url": "/join.html" },
+                "popular": true
+            },
+            {
+                "name": "Gamer",
+                "price": "900",
+                "features": [
+                    "Speed up to <b>6mbps</b>",
+                    "Unlimited traffic",
+                    "80mbps YouTube",
+                    "80mbps BDIX"
+                ],
+                "cta": { "label": "Join now", "url": "/join.html" },
+                "popular": true
+            },
+            {
+                "name": "Power",
+                "price": "1000",
+                "features": [
+                    "Speed up to <b>10mbps</b>",
+                    "Unlimited traffic",
+                    "100mbps YouTube",
+                    "100mbps BDIX"
+                ],
+                "cta": { "label": "Join now", "url": "/join.html" }
+            }
+        ]
+    },
+    "our_services": {
+        "name": "Our Services",
+        "title": "What we offer for you",
+        "description": "We are one of the largest Internet Service Provider and the leader in the telecommunications market.",
+        "services": [
+            {
+                "title": "Best selling plans",
+                "character": "selling_plans.svg",
+                "description": "At Janani, our goal is to help you find the best available internet plan for your home. For many, the cheapest internet plans or value-priced high-speed plans are best.",
+                "features": [
+                    "New connection with in 24 hours",
+                    "Pay optimum as your requirement",
+                    "One stop service"
+                ]
+            },
+            {
+                "title": "Broadband",
+                "character": "broadband.svg",
+                "description": "Wide bandwidth data transmission which transports multiple signals and traffic types. The medium can be coaxial cable, optical fiber, radio or twisted pair.",
+                "features": [
+                    "Fiber",
+                    "Cable",
+                    "Connected 24/7 hrs",
+                    "Desired Bandwidth",
+                    "Enjoy the internet facility in its true sense"
+                ]
+            },
+            {
+                "title": "Wifi Zone",
+                "character": "wifi.svg",
+                "description": "Getting unlimited WiFi saves your regular mobile data allowance for when you really need it. We have setup wifi networks offering hotspot access. Janani Technology Limited is your trusty guide.",
+                "features": [
+                    "No need for cabling",
+                    "Secure internet connection",
+                    "Scalable and Robust sytem"
+                ]
+            },
+            {
+                "title": "Pay Bills (all users)",
+                "character": "pay_online.svg",
+                "description": "Users can pay any amount of internet bill 24/7 from anywhere without any extra charge.",
+                "features": [
+                    "Hassel free",
+                    "Pay from home",
+                    "Digital invoice will be send"
+                ]
+            },
+            {
+                "title": "New Connection",
+                "character": "new_connection.svg",
+                "description": "Best internet service provider in Bangladesh which provides fully dedicated, super fast, cost-effective, secured internet connection. We’re promised to meeting your needs and delivering industry-leading customer service.",
+                "features": [
+                    "Corporate Internet",
+                    "Home Internet",
+                    "Hosting & Development",
+                    "IPTSP"
+                ]
+            },
+            {
+                "title": "Secure Service",
+                "character": "secure_login.svg",
+                "description": "We offer a comprehensive range of protection for your online devices. While basic virus protection is the always the base feature, others that these packages might offer include ransomware protection, a VPN, and even a password manager. These really are all-singing all-dancing online security downloads for those wanting the best possible protection.",
+                "features": [
+                    "Tracks down and destroy any existing malware hiding in a PC",
+                    "Detects spyware threats and destroys each infection.",
+                    "Scans, detects & removes rootkits on your computer.",
+                    "Prevents malicious software turning your PC into a zombie.",
+                    "Enroll right away"
+                ]
+            }
+        ]
+    },
+    "logo": {
+        "alt": "Logo",
+        "src": "images/logo",
+        "sizes": [
+            {
+                "src": "",
+                "view": "10vw",
+                "media": "(max-width:767px)",
+                "intrinsicwidth": 0,
+                "intrinsicheight": 0
+            },
+            {
+                "src": "",
+                "view": "9vw",
+                "media": "(min-width:767px)",
+                "intrinsicwidth": 0,
+                "intrinsicheight": 0
+            }
+        ],
+        "types": ["webp", "png"],
+        "background": false,
+        "intrinsicwidth": 100,
+        "intrinsicheight": 80
+    }
 }

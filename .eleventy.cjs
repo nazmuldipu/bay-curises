@@ -20,8 +20,8 @@ module.exports = function (eleventyConfig) {
         const sizes = getImgSizes(name);
         return getSrcSet(name, sizes, imgObj.intrinsicwidth, imgext);
     });
-    eleventyConfig.addNunjucksFilter('getImgSourceType', function(type='jpeg') {
-        switch(type) {
+    eleventyConfig.addNunjucksFilter('getImgSourceType', function (type = 'jpeg') {
+        switch (type) {
             case 'jpg':
                 return 'jpeg';
             default:
@@ -29,8 +29,13 @@ module.exports = function (eleventyConfig) {
         }
     });
 
+    eleventyConfig.addNunjucksFilter( 'json', function ( value ) {
+        let str = JSON.stringify(value)
+        return str?.replace(/(<svg.*?<\/svg>)/g,"raw svg load from db")
+    } )
+
     eleventyConfig.addPassthroughCopy({ 'components/lib': 'lib' })
-    
+
     eleventyConfig.addPassthroughCopy('videos');
 
     eleventyConfig.addPassthroughCopy({ 'images/output': 'images' });

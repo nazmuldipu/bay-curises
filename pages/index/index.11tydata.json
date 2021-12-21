@@ -2,64 +2,76 @@
     "fake_name": "Person GUD",
     "slides": [
         {
-            "artDirection": [
+            "alt": "Hero Carousel 1",
+            "src": "images/slider1",
+            "sizes": [
                 {
-                    "src": "images/slider1",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "Front desk",
-                    "intrinsicwidth": "2304"
+                    "src": "",
+                    "view": "100vw",
+                    "media": "(max-width:767px)",
+                    "intrinsicwidth": 0,
+                    "intrinsicheight": 0
                 },
                 {
-                    "src": "images/slider1",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "Front desk",
-                    "intrinsicwidth": "2304"
+                    "src": "",
+                    "view": "90vw",
+                    "media": "(min-width:768px)",
+                    "intrinsicwidth": 0,
+                    "intrinsicheight": 0
                 }
-            ]
+            ],
+            "types": ["webp", "jpg"],
+            "background": false,
+            "intrinsicwidth": 2300,
+            "intrinsicheight": 800
         },
         {
-            "artDirection": [
+            "alt": "Hero Carousel 2",
+            "src": "images/slider2",
+            "sizes": [
                 {
-                    "src": "images/slider2",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The Airstream Bar",
-                    "intrinsicwidth": "2304"
+                    "src": "",
+                    "view": "100vw",
+                    "media": "(max-width:767px)",
+                    "intrinsicwidth": 0,
+                    "intrinsicheight": 0
                 },
                 {
-                    "src": "images/slider2",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The Airstream Bar",
-                    "intrinsicwidth": "2304"
+                    "src": "",
+                    "view": "90vw",
+                    "media": "(min-width:768px)",
+                    "intrinsicwidth": 0,
+                    "intrinsicheight": 0
                 }
-            ]
+            ],
+            "types": ["webp", "jpg"],
+            "background": false,
+            "intrinsicwidth": 2300,
+            "intrinsicheight": 800
         },
         {
-            "artDirection": [
+            "alt": "Hero Carousel 3",
+            "src": "images/slider3",
+            "sizes": [
                 {
-                    "src": "images/slider3",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The Airstream Bar and lounge area",
-                    "intrinsicwidth": "2304"
+                    "src": "",
+                    "view": "100vw",
+                    "media": "(max-width:767px)",
+                    "intrinsicwidth": 0,
+                    "intrinsicheight": 0
                 },
                 {
-                    "src": "images/slider3",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The Airstream Bar and lounge area",
-                    "intrinsicwidth": "2304"
+                    "src": "",
+                    "view": "90vw",
+                    "media": "(min-width:768px)",
+                    "intrinsicwidth": 0,
+                    "intrinsicheight": 0
                 }
-            ]
+            ],
+            "types": ["webp", "jpg"],
+            "background": false,
+            "intrinsicwidth": 2300,
+            "intrinsicheight": 800
         }
     ],
     "slide_link": {
@@ -106,7 +118,7 @@
                 {
                     "src": "",
                     "view": "90vw",
-                    "media": "(min-width:767px)",
+                    "media": "(min-width:768px)",
                     "intrinsicwidth": 0,
                     "intrinsicheight": 0
                 }
