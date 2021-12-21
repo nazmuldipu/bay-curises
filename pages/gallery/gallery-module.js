@@ -1,1 +1,1 @@
-console.log('gallery-module.js');
+import '../../components/LightBox/index.js'

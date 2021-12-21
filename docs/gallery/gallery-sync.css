@@ -611,7 +611,7 @@ h6 {
         top: 0;
         right: 0;
         left: 0;
-        z-index: 1030;
+        z-index: 100;
         /* background: var(--color__primary)!important; */
     }
 @media (max-width: 767px) { 
@@ -825,6 +825,9 @@ h6 {
 .min-w-0 {
     min-width: 0px;
 }
+.max-w-6xl {
+    max-width: 72rem;
+}
 .max-w-5xl {
     max-width: 64rem;
 }
@@ -833,9 +836,6 @@ h6 {
 }
 .max-w-4xl {
     max-width: 56rem;
-}
-.max-w-6xl {
-    max-width: 72rem;
 }
 .max-w-7xl {
     max-width: 80rem;
@@ -901,11 +901,11 @@ h6 {
 .justify-items-center {
     justify-items: center;
 }
-.gap-2 {
-    gap: 0.5rem;
-}
 .gap-8 {
     gap: 2rem;
+}
+.gap-2 {
+    gap: 0.5rem;
 }
 .gap-y-1 {
     row-gap: 0.25rem;
@@ -1051,13 +1051,13 @@ h6 {
 .p-2 {
     padding: 0.5rem;
 }
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
 .py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .py-2 {
     padding-top: 0.5rem;
@@ -1225,6 +1225,10 @@ h6 {
 .placeholder-gray-500::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(107, 114, 128, var(--tw-placeholder-opacity));
+}
+.shadow {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-sm {
     --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -1489,6 +1493,294 @@ h6 {
 }
 /****  end imports  ********************************/
 /****  end imports  ********************************/
+/*============================== LIGHTBOX-CSS FROM HERE ===================================*/
+/* line 27, ../sass/simplelightbox.scss */
+body.hidden-scroll {
+  overflow: hidden;
+}
+/* line 30, ../sass/simplelightbox.scss */
+.sl-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(30, 30, 30);
+  opacity: 0.9;
+  display: none;
+  z-index: 100;
+}
+/* line 41, ../sass/simplelightbox.scss */
+.sl-wrapper {
+  z-index: 1000;
+}
+/* line 43, ../sass/simplelightbox.scss */
+.sl-wrapper button {
+  border: 0 none;
+  background: transparent;
+  font-size: 28px;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 49, ../sass/simplelightbox.scss */
+.sl-wrapper button:hover {
+  opacity: 0.7;
+}
+/* line 54, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-close {
+  display: none;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 1015;
+  margin-top: -14px;
+  margin-right: -14px;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+  font-family: Arial, Baskerville, monospace;
+  color: rgb(218, 218, 218);
+  font-size: 2.6rem;
+}
+/* line 70, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-counter {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 1015;
+  color: rgb(222, 222, 222);
+  font-size: 0.9rem;
+}
+/* line 80, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-navigation {
+  width: 100%;
+  display: none;
+}
+/* line 83, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-navigation button {
+  position: fixed;
+  top: 50%;
+  margin-top: -22px;
+  height: 38px;
+  width: 41px;
+  line-height: 35px;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  font-family: Arial, Baskerville, monospace;
+  color: #857550;
+  background-color: #ffff;
+  opacity: 1;
+  padding: 0px;
+  z-index: 10006;
+}
+/* line 95, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-navigation button.sl-next {
+  right: 5px;
+  padding-bottom: 5px;
+}
+/* line 100, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-navigation button.sl-prev {
+  left: 5px;
+  padding-bottom: 5px;
+}
+@media (min-width: 35.5em) {
+  /* line 83, ../sass/simplelightbox.scss */
+  /* .sl-wrapper .sl-navigation button {
+    width: 44px;
+  } */
+  /* line 107, ../sass/simplelightbox.scss */
+  .sl-wrapper .sl-navigation button.sl-next {
+    right: 10px;
+    /* font-size: 3rem; */
+  }
+  /* line 112, ../sass/simplelightbox.scss */
+  .sl-wrapper .sl-navigation button.sl-prev {
+    left: 10px;
+  }
+}
+@media (min-width: 50em) {
+  /* line 83, ../sass/simplelightbox.scss */
+  /* .sl-wrapper .sl-navigation button {
+    width: 44px;
+  } */
+  /* line 120, ../sass/simplelightbox.scss */
+  .sl-wrapper .sl-navigation button.sl-next {
+    right: 20px;
+    /* font-size: 3rem; */
+  }
+  /* line 125, ../sass/simplelightbox.scss */
+  .sl-wrapper .sl-navigation button.sl-prev {
+    left: 20px;
+  }
+}
+/* line 133, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-image {
+  position: fixed;
+  -ms-touch-action: none;
+  touch-action: none;
+  z-index: 10000;
+}
+/* line 138, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-image img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: 0 none;
+}
+@media (min-width: 35.5em) {
+  /* line 138, ../sass/simplelightbox.scss */
+  .sl-wrapper .sl-image img {
+    border: 0 none;
+  }
+}
+@media (min-width: 50em) {
+  /* line 138, ../sass/simplelightbox.scss */
+  .sl-wrapper .sl-image img {
+    border: 0 none;
+  }
+}
+/* line 151, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-image iframe {
+  background: rgb(0, 0, 0);
+  border: 0 none;
+}
+@media (min-width: 35.5em) {
+  /* line 151, ../sass/simplelightbox.scss */
+  .sl-wrapper .sl-image iframe {
+    border: 0 none;
+  }
+}
+@media (min-width: 50em) {
+  /* line 151, ../sass/simplelightbox.scss */
+  .sl-wrapper .sl-image iframe {
+    border: 0 none;
+  }
+}
+/* line 161, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-image .sl-caption {
+  display: none;
+  padding: 10px;
+  color: rgb(222, 222, 222);
+  /*background: rgba(0,0,0,0.8);*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.9rem;
+}
+/* line 171, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-image .sl-caption.pos-top {
+  bottom: auto;
+  top: 0;
+}
+/* line 176, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-image .sl-caption.pos-outside {
+  bottom: auto;
+  left: -15px;
+}
+/* line 181, ../sass/simplelightbox.scss */
+.sl-wrapper .sl-image .sl-download {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: rgb(0, 0, 0);
+  z-index: 1005;
+}
+/* line 192, ../sass/simplelightbox.scss */
+.sl-spinner {
+  display: none;
+  border: 5px solid rgb(51, 51, 51);
+  border-radius: 40px;
+  height: 40px;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  width: 40px;
+  z-index: 1007;
+  -webkit-animation: pulsate 1s ease-out infinite;
+  -moz-animation: pulsate 1s ease-out infinite;
+  -ms-animation: pulsate 1s ease-out infinite;
+  -o-animation: pulsate 1s ease-out infinite;
+  animation: pulsate 1s ease-out infinite;
+}
+/* line 211, ../sass/simplelightbox.scss */
+.sl-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@-o-keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@-ms-keyframes pulsate {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
 .hover\:bg-gray-50:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
@@ -1647,11 +1939,11 @@ h6 {
     .md\:flex-1 {
         flex: 1 1 0%;
     }
-    .md\:grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
     .md\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .md\:items-center {
         align-items: center;

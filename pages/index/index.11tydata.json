@@ -15,7 +15,7 @@
                 {
                     "src": "",
                     "view": "90vw",
-                    "media": "(min-width:767px)",
+                    "media": "(min-width:768px)",
                     "intrinsicwidth": 0,
                     "intrinsicheight": 0
                 }
@@ -39,7 +39,7 @@
                 {
                     "src": "",
                     "view": "90vw",
-                    "media": "(min-width:767px)",
+                    "media": "(min-width:768px)",
                     "intrinsicwidth": 0,
                     "intrinsicheight": 0
                 }
@@ -63,7 +63,7 @@
                 {
                     "src": "",
                     "view": "90vw",
-                    "media": "(min-width:767px)",
+                    "media": "(min-width:768px)",
                     "intrinsicwidth": 0,
                     "intrinsicheight": 0
                 }
@@ -118,7 +118,7 @@
                 {
                     "src": "",
                     "view": "90vw",
-                    "media": "(min-width:767px)",
+                    "media": "(min-width:768px)",
                     "intrinsicwidth": 0,
                     "intrinsicheight": 0
                 }

@@ -6,5 +6,18 @@ permalink: "docs/gallery.html"
 permalinkBypassOutputDir: true
 nickname: "Gallery"
 ---
-<div class="mt-28">spce</div>
+{%- from "components/components.njk" import component -%}
+{%- from "components/global-image.njk" import global_image -%}
+
+<div class="mt-28"></div>
+<section class="max-w-6xl mx-auto py-10">
+    {{component('headings/section', content)}}
+    <article class="py-10 grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center gallery">
+        {% for item in content.images%}
+            <div  href="{{item.src}}.{{item.types | last}}" class="block w-full shadow hover:shadow-lg cursor-pointer">
+            {{global_image(item, classes='w-full image_frame sm:4:3')}}
+            </div>
+        {% endfor %}
+    </article>
+</section>
 {{title}}
