@@ -1,3 +1,4 @@
+{%- from "components/global-image.njk" import global_image -%}
 {% macro media_carousel(slides, background_color, caption, splitNav = false) %}
     <figure class="{{ background_color if background_color }}">
     <media-carousel>
@@ -19,30 +20,7 @@
             <div class="swiper-wrapper z-10">
                     {% for slide in slides %}
                         <div class="swiper-slide">
-                            <picture>
-                            {% for direction in slide.artDirection %}
-                                <source 
-                                    data-src="{{ direction.src }}.webp"
-                                    data-srcset="{{ direction | imgObjSrcSet('webp') }}"
-                                    media="{{ direction.media }}"
-                                    sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
-                                    type="image/webp">
-                                <source 
-                                    data-src="{{ direction.src }}.{{ direction.type if direction.type else 'jpg' }}"
-                                    data-srcset="{{ direction | imgObjSrcSet }}" 
-                                    media="{{ direction.media }}"
-                                    sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
-                                    type="image/{{ direction.type | getImgSourceType }}">
-                            {% endfor %}
-                            {% set default = slide.artDirection|first %}
-                                <img 
-                                    data-srcset="{{ default | imgObjSrcSet }}"
-                                    data-src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
-                                    class="swiper-lazy w-full h-auto"
-                                    sizes="{{ default.sizes if default.sizes else '75vw' }}" 
-                                    alt="{{ default.imgalt }}">
-                                <div class="swiper-lazy-preloader"></div>
-                            </picture>
+                            {{global_image(slide, classes='image_frame sm:4:3 md:16:9')}}
                         </div>
                     {% endfor %}
             </div>

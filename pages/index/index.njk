@@ -47,7 +47,8 @@ nickname: "You Thing"
 <section class="max-w-6xl mx-auto py-10">
     {{component('headings/section', seat_map)}}
     <article class="py-10">
-        {{global_image(seat_map.image)}}
+        {{global_image(seat_map.image, classes='image_frame sm:2:1')}}
+        {# {{global_image(seat_map.image)}} #}
         <p class="text-center font-semibold">Fig: Our Seat Plan </p>
     </article>
 </section>
