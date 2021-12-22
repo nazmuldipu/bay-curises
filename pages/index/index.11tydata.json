@@ -76,7 +76,7 @@
     ],
     "slide_link": {
         "copy": "Read more",
-        "href": "/restaurant-menu",
+        "href": "/about.html",
         "classes": ["button", "bg-contrast"]
     },
     "schedule": {

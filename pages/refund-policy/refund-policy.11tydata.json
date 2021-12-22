@@ -1,0 +1,16 @@
+{
+    "title": "Refund Policy",
+    "content": {
+        "title": "Refund Policy",
+        "sub_title": "We are happy to assist you",
+        "copy": "The Company Policy in this regards is as below:",
+        "policies": [
+            "If a Ticket is required to be cancelled or amended more than 24 hours before scheduled departure, an amount equivalent to 15% of the total value of the ticket shall be charged.",
+            "If the ticket is required to be cancelled or amended less than 18 hours before scheduled departure, an amount equivalent to 35% of the total value of the ticket shall be charged.",
+            "If the ticket is required to be cancelled or amended less than 12 hours before scheduled departure, an amount equivalent to 60% of the total value of the ticket shall be charged.",
+            "If the ticket is required to be cancelled or amended less than 06 hours before scheduled departure, an amount equivalent to 85% of the total value of the ticket shall be charged.",
+            "If the ticket is required to be cancelled or amended less than 04 hours before scheduled departure, no refund shall be made."
+        ],
+        "note":"Conditions Apply."
+    }
+}
