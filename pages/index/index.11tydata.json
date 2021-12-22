@@ -75,7 +75,7 @@
         }
     ],
     "slide_link": {
-        "copy": "Read more",
+        "copy": "About Bay Cruise",
         "href": "/about.html",
         "classes": ["button", "bg-contrast"]
     },
