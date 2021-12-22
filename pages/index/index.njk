@@ -16,30 +16,40 @@ nickname: "You Thing"
     </article>
     <article class="absolute top-2/4 ty-50 left-0 right-0 w-full max-w-5xl mx-auto z-10">
         <div class="max-w-sm md:float-right text-left text-white px-4 md:px-0">
-            <div class="font-fair grid text-xl md:text-6xl font-bold tracking-wider mb-2 md:mb-5"><small class="text-sm md:text-3xl text-contrast font-poppins">Introducing</small> Bay Cruise</div>
+            <div class="font-fair grid text-xl md:text-6xl font-bold tracking-wider mb-2 md:mb-5">
+                <small class="text-sm md:text-3xl text-contrast font-poppins">Introducing</small> Bay Cruise</div>
             <div class="mb-2 md:mb-8">The first catamaran service between Teknaf and St Martins Island in less than 02 hours.</div>
             {{component('buttons/link_button', slide_link)}}
         </div>
     </article>
 </section>
 
-{% macro schedule_card(item) %}
-    <article class="m-2 p-6 border rounded-xl cursor-pointer hover:shadow-lg hover:bg-gray-50 w-80">    
-        <header class="text-xl font-bold pb-5">{{item.route}} ({{item.title}})</header>
-        <div class="text-base text-gray-600">Reporting  : <strong>{{item.reporting }}</strong> </div>
-        <div class="text-base text-gray-600">Departure  : <strong>{{item.departure }}</strong> </div>
-        <div class="text-base text-gray-600">Day : <strong>{{item.day}}</strong>  </div>
-        <div class="text-base text-gray-600">Starting Point : <strong>{{item.location}}</strong>  </div>
-        <div class="text-base text-gray-600">App. Arival Time : <strong>{{item.arrival}}</strong>  </div>
-    </article>
+
+{% macro schedule_card2(item, classes="bg-purple-600") %}
+    <div class="flex shadow-sm rounded-md cursor-pointer hover:shadow-lg m-4">
+        <div class="flex-shrink-0 flex items-center justify-center w-16 {{classes}} text-white text-sm md:text-lg font-medium rounded-l-md ">
+                <span class="-rotate-90">{{item.title}}</span>
+            </div>
+        <div class="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+            <div class="flex-1 px-4 py-2 text-sm md:text-lg truncate">
+                <span class="text-gray-900 text-xl md:text-2xl font-medium hover:text-gray-600">{{item.route}}</span>
+                <p class="text-gray-500 pt-2"><strong>{{item.day}}</strong></p>
+                <p class="text-gray-500">Reporting  : <strong>{{item.reporting }}</strong></p>
+                <p class="text-gray-500">Departure  : <strong>{{item.departure }}</strong></p>
+                <p class="text-gray-500">Starts : <strong>{{item.location}}</p>
+                <p class="text-gray-500">App. arrive : <strong>{{item.arrival}}</p>
+            </div>
+           
+        </div>
+    </div>
 {% endmacro %}
 
 {# Schedule #}
 <section class="max-w-4xl mx-auto py-10">
     {{component('headings/section', schedule)}}
-    <article class="py-10 grid grid-cols-1 md:grid-cols-2 justify-items-center">
-        {{schedule_card(schedule.up)}}
-        {{schedule_card(schedule.down)}}
+    <article class="py-10 flex flex-row flex-wrap justify-center">
+        {{schedule_card2(schedule.up)}}
+        {{schedule_card2(schedule.down, 'bg-green-500')}}
     </article>
 </section>
 
@@ -52,27 +62,248 @@ nickname: "You Thing"
     </article>
 </section>
 
-{% macro price_card(item) %}
-    <div class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200 text-center w-80 my-10 ">
-        <div class="p-6">
-          <h2 class="text-lg leading-6 font-medium text-gray-900">{{item.title}}</h2>
-          <p class="my-8">
-            <span class="text-4xl font-extrabold text-gray-900">৳{{item.price}}</span>
-            <span class="text-base font-medium text-gray-500">/Person</span>
-          </p>
-          <h4 class="text-xl font-medium">{{item.scope}}</h4>
-          <h4 class="text-xl font-medium">{{item.zone}}</h4>
-          <a href="tel:01826191509" class="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Buy Now</a>
-        </div>        
+<!-- Pricing -->
+<div class="bg-gray-100">
+    <div class="pt-10 px-4 sm:px-6 md:px-8 md:pt-20">
+        <div class="text-center">
+            {{component('headings/section', price_map)}}
+        </div>
     </div>
-{% endmacro %}
 
-{# Price list #}
-<section class="max-w-6xl mx-auto py-10">
-    {{component('headings/section', price_map)}}
-    <article class="py-10 grid grid-cols-1 md:grid-cols-3 justify-items-center">
-        {% for item in price_map.price_list%}
-            {{price_card(item)}}
-        {% endfor %}
-    </article>
-</section>
+    <div class="mt-6 pb-10 md:mt-10 md:pb-20">
+        <div class="relative z-0">
+            <div class="absolute inset-0 h-5/6 bg-gray-200 md:h-2/3"></div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+                <div class="relative md:grid md:grid-cols-7">
+                    <div class="mx-auto max-w-md md:mx-0 md:max-w-none md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-3">
+                        <div class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden md:rounded-none md:rounded-l-lg">
+                            <div class="flex-1 flex flex-col">
+                                <div class="bg-white px-6 py-10">
+                                    <div>
+                                        <h3 class="text-center text-2xl font-medium text-gray-900" id="tier-hobby"> Rajanigandha </h3>
+                                        <div class="mt-4 flex items-center justify-center">
+                                            <span class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
+                                                <span class="mt-2 mr-2 text-4xl font-medium"> ৳ </span>
+                                                <span class="font-extrabold"> 1400 </span>
+                                            </span>
+                                            <span class="text-xl font-medium text-gray-500"> /person </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 md:p-6 xl:p-10">
+                                    <ul role="list" class="space-y-4">
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Round Trip (Up and Down) </p>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Air-conditioned </p>
+                                        </li>
+
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Ground Floor </p>
+                                        </li>
+
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Chair Coach </p>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Green Zone </p>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-8">
+                                        <div class="rounded-lg shadow-md">
+                                            <a href="tel:01826191509" class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50" aria-describedby="tier-hobby"> Buy now </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 max-w-lg mx-auto md:mt-0 md:max-w-none md:mx-0 md:col-start-3 md:col-end-6 md:row-start-1 md:row-end-4">
+                        <div class="relative z-10 rounded-lg shadow-xl">
+                            <div class="pointer-events-none absolute inset-0 rounded-lg border-2 border-indigo-600" aria-hidden="true"></div>
+                            <div class="absolute inset-x-0 top-0 transform translate-y-px">
+                                <div class="flex justify-center transform -translate-y-1/2">
+                                    <span class="inline-flex rounded-full bg-indigo-600 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white"> Most popular </span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
+                                <div>
+                                    <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6" id="tier-growth"> Krisnochura </h3>
+                                    <div class="mt-4 flex items-center justify-center">
+                                        <span class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
+                                            <span class="mt-2 mr-2 text-4xl font-medium"> ৳ </span>
+                                            <span class="font-extrabold"> 1600 </span>
+                                        </span>
+                                        <span class="text-2xl font-medium text-gray-500"> /person </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
+                                <ul role="list" class="space-y-4">
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: outline/check -->
+                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base font-medium text-gray-500"> Round Trip (Up and Down) </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: outline/check -->
+                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base font-medium text-gray-500"> Air-conditioned </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: outline/check -->
+                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base font-medium text-gray-500"> First Floor </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: outline/check -->
+                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base font-medium text-gray-500"> Sofa Seat </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: outline/check -->
+                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base font-medium text-gray-500"> Red Zone </p>
+                                    </li>
+                                </ul>
+                                <div class="mt-10">
+                                    <div class="rounded-lg shadow-md">
+                                        <a href="tel:01826191509" class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700" aria-describedby="tier-growth"> Buy now </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10 mx-auto max-w-md md:m-0 md:max-w-none md:col-start-6 md:col-end-8 md:row-start-2 md:row-end-3">
+                        <div class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden md:rounded-none md:rounded-r-lg">
+                            <div class="flex-1 flex flex-col">
+                                <div class="bg-white px-6 py-10">
+                                    <div>
+                                        <h3 class="text-center text-2xl font-medium text-gray-900" id="tier-scale"> Hasnahena </h3>
+                                        <div class="mt-4 flex items-center justify-center">
+                                            <span class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
+                                                <span class="mt-2 mr-2 text-4xl font-medium"> ৳ </span>
+                                                <span class="font-extrabold"> 1500 </span>
+                                            </span>
+                                            <span class="text-xl font-medium text-gray-500"> /month </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 md:p-6 xl:p-10">
+                                    <ul role="list" class="space-y-4">
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Round Trip (Up and Down) </p>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Air-conditioned </p>
+                                        </li>
+
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Ground Floor </p>
+                                        </li>
+
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Chair Coach </p>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="flex-shrink-0">
+                                                <!-- Heroicon name: outline/check -->
+                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                </svg>
+                                            </div>
+                                            <p class="ml-3 text-base font-medium text-gray-500"> Blue Zone </p>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-8">
+                                        <div class="rounded-lg shadow-md">
+                                            <a href="tel:01826191509" class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50" aria-describedby="tier-scale"> Buy now </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

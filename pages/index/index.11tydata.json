@@ -85,11 +85,11 @@
         "up": {
             "title": "Up",
             "route": "Teknaf to Saintmartin",
-            "reporting": "9:00 AM",
-            "departure": "9:30 AM",
+            "reporting": "9:00AM",
+            "departure": "9:30AM",
             "day": "Everyday",
             "location": "Teknaf Ghat",
-            "arrival": "11:30 AM"
+            "arrival": "11:30AM"
         },
         "down": {
             "title": "Down",
@@ -98,7 +98,7 @@
             "departure": "3:00PM",
             "day": "Everyday",
             "location": "Saintmartin Ghat",
-            "arrival": "5:00 PM"
+            "arrival": "5:00PM"
         }
     },
     "seat_map": {
@@ -130,26 +130,29 @@
         }
     },
     "price_map": {
-        "title": "Our Ticket Price",
-        "sub_title": "Best price for your ticket",
+        "title": "Pricing",
+        "sub_title": "The right price for you, whoever you are",
         "price_list": [
             {
                 "title": "Rajanigandha",
                 "zone": "Green Zone",
                 "scope": "Up and Down",
-                "price": "1400"
+                "price": "1400",
+                "popular": false
             },
             {
                 "title": "Hasnahena",
                 "zone": "Blue Zone",
                 "scope": "Up and Down",
-                "price": "1500"
+                "price": "1500",
+                "popular": false
             },
             {
                 "title": "Krisnochura",
                 "zone": "Red Zone",
                 "scope": "Up and Down",
-                "price": "1600"
+                "price": "1600",
+                "popular": true
             }
         ]
     }
