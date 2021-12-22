@@ -1,3 +1,87 @@
 {
-    "title":"About us"
+    "title": "About us",
+    "content": [
+        {
+            "title": "Bay Cruise",
+            "sub_title": "About M.V. Bay Cruise I",
+            "copy": [
+                "MV Bay Curise is a modern cruise ship in Bangladesh. It goes St. Martin's Island directly from Teknaf. Farhan Tourism, a Cox's Bazar based company, has added this state-of-the-art cruise ship for tourists on the St. Martin route from Teknaf. After Sukanta Babu, it is another life in the travel industry of Bangladesh.",
+                "The luxury MV Bay Cruise  ship starts it's journey on the St. Martin route from Teknaf to provide a new experience of traveling on international standard luxury cruise ships in Bangladesh."
+            ]
+        }
+    ],
+    "team": {
+        "title": "Our Team",
+        "sub_title": "succeeding in the world",
+        "persons": [
+            {
+                "name": {
+                    "copy": "Bahadur Hossain",
+                    "classes": ["text-center", "pb-2"]
+                },
+                "designation": {
+                    "copy": "Founder & CEO",
+                    "classes": ["text-center", "font-semibold", "text-light"]
+                },
+                "image": {
+                    "alt": "Bahadur Hossain",
+                    "src": "images/bahadur",
+                    "sizes": [
+                        {
+                            "src": "",
+                            "view": "80vw",
+                            "media": "(max-width:767px)",
+                            "intrinsicwidth": 0,
+                            "intrinsicheight": 0
+                        },
+                        {
+                            "src": "",
+                            "view": "20vw",
+                            "media": "(min-width:768px)",
+                            "intrinsicwidth": 0,
+                            "intrinsicheight": 0
+                        }
+                    ],
+                    "types": ["webp", "jpg"],
+                    "background": false,
+                    "intrinsicwidth": 2300,
+                    "intrinsicheight": 800
+                }
+            },
+            {
+                "name": {
+                    "copy": "Sayed Hossen",
+                    "classes": ["text-center", "pb-2"]
+                },
+                "designation": {
+                    "copy": "General Manager",
+                    "classes": ["text-center", "font-semibold", "text-light"]
+                },
+                "image": {
+                    "alt": "Sayed Hossen",
+                    "src": "images/sayed",
+                    "sizes": [
+                        {
+                            "src": "",
+                            "view": "80vw",
+                            "media": "(max-width:767px)",
+                            "intrinsicwidth": 0,
+                            "intrinsicheight": 0
+                        },
+                        {
+                            "src": "",
+                            "view": "20vw",
+                            "media": "(min-width:768px)",
+                            "intrinsicwidth": 0,
+                            "intrinsicheight": 0
+                        }
+                    ],
+                    "types": ["webp", "jpg"],
+                    "background": false,
+                    "intrinsicwidth": 2300,
+                    "intrinsicheight": 800
+                }
+            }
+        ]
+    }
 }

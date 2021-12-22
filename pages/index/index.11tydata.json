@@ -136,16 +136,19 @@
             {
                 "title": "Rajanigandha",
                 "zone": "Green Zone",
+                "scope": "Up and Down",
                 "price": "1400"
             },
             {
                 "title": "Hasnahena",
                 "zone": "Blue Zone",
+                "scope": "Up and Down",
                 "price": "1500"
             },
             {
                 "title": "Krisnochura",
                 "zone": "Red Zone",
+                "scope": "Up and Down",
                 "price": "1600"
             }
         ]
