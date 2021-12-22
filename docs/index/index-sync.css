@@ -1621,6 +1621,9 @@ h6 {
     .md\:float-right {
         float: right;
     }
+    .md\:mt-28 {
+        margin-top: 7rem;
+    }
     .md\:mb-5 {
         margin-bottom: 1.25rem;
     }

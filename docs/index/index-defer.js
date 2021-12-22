@@ -138,11 +138,14 @@ customElements.define("media-carousel", MediaCarousel);
 // pages/index/index-defer.js
 var app_nav = document.querySelector("#app_nav");
 function changeLinkState() {
+  console.log(screen.width);
   if (window.scrollY > 10) {
     app_nav.classList.add("bg-primary");
   } else {
     app_nav.classList.remove("bg-primary");
   }
 }
-app_nav.classList.remove("bg-primary");
-window.addEventListener("scroll", changeLinkState);
+if (screen.width > 768) {
+  app_nav.classList.remove("bg-primary");
+  window.addEventListener("scroll", changeLinkState);
+}
