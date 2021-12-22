@@ -6,5 +6,31 @@ permalink: "docs/about.html"
 permalinkBypassOutputDir: true
 nickname: "About"
 ---
-<div class="mt-28">spce</div>
-{{title}}
+{%- from "components/components.njk" import component -%}
+{%- from "components/global-image.njk" import global_image -%}
+
+<div class="md:mt-28"></div>
+<section class="max-w-6xl mx-auto">
+    {% for data in content %}
+        {{component('headings/section', data)}}
+        <div class="py-10 mx-4">
+            {% for tex in data.copy %}
+                <p class="pb-5">{{tex}}</p>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</section>
+<section class="max-w-6xl mx-auto">
+    {{component('headings/section', team)}}
+    <article class="flex flex-row flex-wrap justify-center my-6">
+        {% for person in team.persons%}
+            <div class="w-80 my-4 md:mx-4">
+                <div class="rounded-full">
+                    {{global_image(person.image, classes='w-full image_frame', imgClass="rounded-full")}}
+                    {{component('headings/h3', person.name)}}
+                    {{component('headings/h6', person.designation)}}
+                </div>
+            </div>
+        {% endfor %}
+    </article>
+</section>

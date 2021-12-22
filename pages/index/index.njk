@@ -60,11 +60,13 @@ nickname: "You Thing"
             <span class="text-4xl font-extrabold text-gray-900">৳{{item.price}}</span>
             <span class="text-base font-medium text-gray-500">/Person</span>
           </p>
+          <h4 class="text-xl font-medium">{{item.scope}}</h4>
           <h4 class="text-xl font-medium">{{item.zone}}</h4>
           <a href="tel:01826191509" class="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900">Buy Now</a>
         </div>        
     </div>
 {% endmacro %}
+
 {# Price list #}
 <section class="max-w-6xl mx-auto py-10">
     {{component('headings/section', price_map)}}

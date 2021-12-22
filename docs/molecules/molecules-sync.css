@@ -711,6 +711,18 @@ h6 {
     margin-left: auto;
     margin-right: auto;
 }
+.mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -722,9 +734,6 @@ h6 {
 .-my-2 {
     margin-top: -0.5rem;
     margin-bottom: -0.5rem;
-}
-.mt-28 {
-    margin-top: 7rem;
 }
 .mb-2 {
     margin-bottom: 0.5rem;
@@ -795,11 +804,11 @@ h6 {
 .h-16 {
     height: 4rem;
 }
-.w-full {
-    width: 100%;
-}
 .w-80 {
     width: 20rem;
+}
+.w-full {
+    width: 100%;
 }
 .w-6 {
     width: 1.5rem;
@@ -876,6 +885,9 @@ h6 {
 }
 .flex-row {
     flex-direction: row;
+}
+.flex-wrap {
+    flex-wrap: wrap;
 }
 .place-content-stretch {
     place-content: stretch;
@@ -971,6 +983,9 @@ h6 {
 .whitespace-nowrap {
     white-space: nowrap;
 }
+.rounded-full {
+    border-radius: 9999px;
+}
 .rounded-xl {
     border-radius: 0.75rem;
 }
@@ -982,9 +997,6 @@ h6 {
 }
 .rounded {
     border-radius: 0.25rem;
-}
-.rounded-full {
-    border-radius: 9999px;
 }
 .border {
     border-width: 1px;
@@ -1089,6 +1101,9 @@ h6 {
 }
 .pb-5 {
     padding-bottom: 1.25rem;
+}
+.pb-2 {
+    padding-bottom: 0.5rem;
 }
 .pt-8 {
     padding-top: 2rem;
@@ -1620,6 +1635,10 @@ h6 {
     }
     .md\:float-right {
         float: right;
+    }
+    .md\:mx-4 {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .md\:mt-28 {
         margin-top: 7rem;
