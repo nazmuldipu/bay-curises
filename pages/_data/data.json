@@ -38,7 +38,7 @@
             { "label": "Home", "link": "index.html" },
             { "label": "About", "link": "about.html" },
             { "label": "Gallery", "link": "gallery.html" },
-            { "label": "Contact", "link": "contact_us.html" }
+            { "label": "Contact", "link": "contact.html" }
         ]
     },
     "index": {},
