@@ -130,26 +130,29 @@
         }
     },
     "price_map": {
-        "title": "Our Ticket Price",
-        "sub_title": "Best price for your ticket",
+        "title": "Pricing",
+        "sub_title": "The right price for you, whoever you are",
         "price_list": [
             {
                 "title": "Rajanigandha",
                 "zone": "Green Zone",
                 "scope": "Up and Down",
-                "price": "1400"
+                "price": "1400",
+                "popular": false
             },
             {
                 "title": "Hasnahena",
                 "zone": "Blue Zone",
                 "scope": "Up and Down",
-                "price": "1500"
+                "price": "1500",
+                "popular": false
             },
             {
                 "title": "Krisnochura",
                 "zone": "Red Zone",
                 "scope": "Up and Down",
-                "price": "1600"
+                "price": "1600",
+                "popular": true
             }
         ]
     }
