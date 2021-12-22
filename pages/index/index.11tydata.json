@@ -85,11 +85,11 @@
         "up": {
             "title": "Up",
             "route": "Teknaf to Saintmartin",
-            "reporting": "9:00 AM",
-            "departure": "9:30 AM",
+            "reporting": "9:00AM",
+            "departure": "9:30AM",
             "day": "Everyday",
             "location": "Teknaf Ghat",
-            "arrival": "11:30 AM"
+            "arrival": "11:30AM"
         },
         "down": {
             "title": "Down",
@@ -98,7 +98,7 @@
             "departure": "3:00PM",
             "day": "Everyday",
             "location": "Saintmartin Ghat",
-            "arrival": "5:00 PM"
+            "arrival": "5:00PM"
         }
     },
     "seat_map": {

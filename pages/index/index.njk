@@ -27,12 +27,12 @@ nickname: "You Thing"
 
 {% macro schedule_card2(item, classes="bg-purple-600") %}
     <div class="flex shadow-sm rounded-md cursor-pointer hover:shadow-lg m-4">
-        <div class="flex-shrink-0 flex items-center justify-center w-16 {{classes}} text-white text-sm font-medium rounded-l-md">
-                {{item.title}}
+        <div class="flex-shrink-0 flex items-center justify-center w-16 {{classes}} text-white text-sm md:text-lg font-medium rounded-l-md ">
+                <span class="-rotate-90">{{item.title}}</span>
             </div>
         <div class="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
-            <div class="flex-1 px-4 py-2 text-sm truncate">
-                <span class="text-gray-900 text-xl font-medium hover:text-gray-600">{{item.route}}</span>
+            <div class="flex-1 px-4 py-2 text-sm md:text-lg truncate">
+                <span class="text-gray-900 text-xl md:text-2xl font-medium hover:text-gray-600">{{item.route}}</span>
                 <p class="text-gray-500 pt-2"><strong>{{item.day}}</strong></p>
                 <p class="text-gray-500">Reporting  : <strong>{{item.reporting }}</strong></p>
                 <p class="text-gray-500">Departure  : <strong>{{item.departure }}</strong></p>
