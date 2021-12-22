@@ -24,28 +24,32 @@ nickname: "You Thing"
     </article>
 </section>
 
-{% macro schedule_card(item) %}
-    <article class="m-2 p-6 border rounded-xl cursor-pointer hover:shadow-lg hover:bg-gray-50 w-80">
-        <header class="text-xl font-bold pb-5">{{item.route}} ({{item.title}})</header>
-        <div class="text-base text-gray-600">Reporting  : <strong>{{item.reporting }}</strong>
+
+{% macro schedule_card2(item, classes="bg-purple-600") %}
+    <div class="flex shadow-sm rounded-md cursor-pointer hover:shadow-lg m-4">
+        <div class="flex-shrink-0 flex items-center justify-center w-16 {{classes}} text-white text-sm font-medium rounded-l-md">
+                {{item.title}}
+            </div>
+        <div class="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+            <div class="flex-1 px-4 py-2 text-sm truncate">
+                <span class="text-gray-900 text-xl font-medium hover:text-gray-600">{{item.route}}</span>
+                <p class="text-gray-500 pt-2"><strong>{{item.day}}</strong></p>
+                <p class="text-gray-500">Reporting  : <strong>{{item.reporting }}</strong></p>
+                <p class="text-gray-500">Departure  : <strong>{{item.departure }}</strong></p>
+                <p class="text-gray-500">Starts : <strong>{{item.location}}</p>
+                <p class="text-gray-500">App. arrive : <strong>{{item.arrival}}</p>
+            </div>
+           
         </div>
-        <div class="text-base text-gray-600">Departure  : <strong>{{item.departure }}</strong>
-        </div>
-        <div class="text-base text-gray-600">Day : <strong>{{item.day}}</strong>
-        </div>
-        <div class="text-base text-gray-600">Starting Point : <strong>{{item.location}}</strong>
-        </div>
-        <div class="text-base text-gray-600">App. Arival Time : <strong>{{item.arrival}}</strong>
-        </div>
-    </article>
+    </div>
 {% endmacro %}
 
 {# Schedule #}
 <section class="max-w-4xl mx-auto py-10">
     {{component('headings/section', schedule)}}
-    <article class="py-10 grid grid-cols-1 md:grid-cols-2 justify-items-center">
-        {{schedule_card(schedule.up)}}
-        {{schedule_card(schedule.down)}}
+    <article class="py-10 flex flex-row flex-wrap justify-center">
+        {{schedule_card2(schedule.up)}}
+        {{schedule_card2(schedule.down, 'bg-green-500')}}
     </article>
 </section>
 
