@@ -63,7 +63,7 @@ try {
     await rmNoExist(outputPath);
     await mkdir(outputPath);
     // replace .gitignore
-    await writeFile(join(outputPath, '.gitignore'), GITIGNORE_EMPTY_DIR);
+    // await writeFile(join(outputPath, '.gitignore'), GITIGNORE_EMPTY_DIR);
     const imgFiles = await readdir(join(imagesPath, SRC_DIR));
     const images = imgFiles
         .filter(imgFile => imgFile.match(/.(jpg|jpeg|png|webp)$/i))
