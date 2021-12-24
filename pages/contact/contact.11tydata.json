@@ -3,7 +3,7 @@
     "content": {
         "title": "Contact Us",
         "sub_title": "We are here to help you",
-        "copy": "Thank you for your interest in Bay Cruise. If you have an inquiry,  please call us : +88 01826 191509."
+        "copy": "Thank you for your interest in Bay Cruise. If you have an inquiry,  please call us : +88 01814344256."
     },
     "address": {
         "title": {
@@ -17,7 +17,7 @@
                     "classes": ["text-light", "font-semibold", "pb-2"]
                 },
                 "copy": "Shugondha Point, <br/> Ground Floor of Ruposhi Bangla Restaurant, <br/> New Beach Rd, Cox's Bazar - 4700",
-                "phone": ["01826-191509", "01818-774311"],
+                "phone": ["01814-344256", "01818-774311"],
                 "has_map": true
             },
             {
