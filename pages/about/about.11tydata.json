@@ -17,7 +17,7 @@
             {
                 "name": {
                     "copy": "Bahadur Hossain",
-                    "classes": ["text-center", "pb-2"]
+                    "classes": ["text-center", "py-2"]
                 },
                 "designation": {
                     "copy": "Founder & CEO",
@@ -51,7 +51,7 @@
             {
                 "name": {
                     "copy": "Sayed Hossen",
-                    "classes": ["text-center", "pb-2"]
+                    "classes": ["text-center", "py-2"]
                 },
                 "designation": {
                     "copy": "General Manager",
