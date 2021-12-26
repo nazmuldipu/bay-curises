@@ -23,7 +23,7 @@
             {
                 "title": {
                     "copy": "Dhaka Office",
-                    "classes": ["text-light", "font-semibold", "pb-2", "pt-10"]
+                    "classes": ["text-light", "font-semibold", "pb-2"]
                 },
                 "copy": "",
                 "phone": ["01779-181872"],
