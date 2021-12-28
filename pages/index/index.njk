@@ -16,8 +16,8 @@ nickname: "You Thing"
     </article>
     <article class="absolute top-2/4 ty-50 left-0 right-0 w-full max-w-5xl mx-auto z-10">
         <div class="max-w-sm md:float-right text-left text-white px-4 md:px-0">
-            <h1 class="font-fair grid text-xl md:text-6xl font-bold tracking-wider mb-2 md:mb-5">
-                <small class="text-sm md:text-3xl text-contrast font-poppins">Introducing</small> Bay Cruise</h1>
+            <small class="text-sm md:text-3xl text-contrast font-poppins">Introducing</small> 
+            <h1 class="font-fair grid text-xl md:text-6xl font-bold tracking-wider mb-2 md:mb-5">Bay Cruise</h1>
             <div class="mb-2 md:mb-8">The first catamaran service between Teknaf and St Martins Island in less than 02 hours.</div>
             {{component('buttons/link_button', slide_link)}}
         </div>
@@ -47,7 +47,7 @@ nickname: "You Thing"
 {# Schedule #}
 <section class="max-w-4xl mx-auto py-10">
     {{component('headings/section', schedule)}}
-    <article class="py-10 flex flex-row flex-wrap justify-center">
+    <article class="pt-10 flex flex-row flex-wrap justify-center">
         {{schedule_card2(schedule.up)}}
         {{schedule_card2(schedule.down, 'bg-green-800')}}
     </article>

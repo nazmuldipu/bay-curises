@@ -1271,13 +1271,13 @@ h6 {
     font-size: 1rem;
     line-height: 1.5rem;
 }
-.text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
 .text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+}
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 .text-2xl {
     font-size: 1.5rem;
@@ -1902,13 +1902,13 @@ h6 {
     .md\:pt-5 {
         padding-top: 1.25rem;
     }
-    .md\:text-6xl {
-        font-size: 3.75rem;
-        line-height: 1;
-    }
     .md\:text-3xl {
         font-size: 1.875rem;
         line-height: 2.25rem;
+    }
+    .md\:text-6xl {
+        font-size: 3.75rem;
+        line-height: 1;
     }
     .md\:text-lg {
         font-size: 1.125rem;
