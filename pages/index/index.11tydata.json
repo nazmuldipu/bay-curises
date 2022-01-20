@@ -3,7 +3,7 @@
     "slides": [
         {
             "alt": "Hero Carousel 1",
-            "src": "images/slider1",
+            "src": "images/ship_3",
             "sizes": [
                 {
                     "src": "",
@@ -27,7 +27,7 @@
         },
         {
             "alt": "Hero Carousel 2",
-            "src": "images/slider2",
+            "src": "images/ship_2",
             "sizes": [
                 {
                     "src": "",
@@ -51,7 +51,7 @@
         },
         {
             "alt": "Hero Carousel 3",
-            "src": "images/slider3",
+            "src": "images/ship_1",
             "sizes": [
                 {
                     "src": "",
